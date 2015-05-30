@@ -9,7 +9,7 @@ public class ShipController : MonoBehaviour {
 	public float MaxLife;
 	public event Action DieEvent;
 
-	void Damage(float dmg) {
+	public void Damage(float dmg) {
 
 		Life -= dmg;
 
