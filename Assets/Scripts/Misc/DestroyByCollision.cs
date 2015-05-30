@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Done_DestroyByContact : MonoBehaviour
+public class DestroyByCollision : MonoBehaviour
 {
 	public GameObject explosion;
 	public GameObject playerExplosion;
@@ -43,4 +43,32 @@ public class Done_DestroyByContact : MonoBehaviour
 		Destroy (other.gameObject);
 		Destroy (gameObject);
 	}
+
+    void OnDestroy()
+    {
+        MainMenuScript script = transform.parent.gameObject.GetComponent<MainMenuScript>();
+        
+        //Debug.Log(this.name);
+        switch (this.name) 
+        {
+            case "btn_Start":
+                script.btnStartPressed();
+                GameObject[] gos;
+                gos = GameObject.FindGameObjectsWithTag("Button");
+                foreach (GameObject go in gos)
+                {
+                    Destroy(go);
+                }
+                break;
+            case "btn_Settings":
+                script.btnSettingsPressed();
+                break;
+            case "btn_Exit": 
+                script.btnExitPressed();
+                break;
+            default:
+                Debug.Log("Nichts passiert!");
+                break;
+        }
+    }
 }

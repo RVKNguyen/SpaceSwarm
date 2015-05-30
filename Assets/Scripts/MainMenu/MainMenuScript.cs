@@ -13,18 +13,20 @@ public class MainMenuScript : MonoBehaviour {
 	
 	}
 
-    public void StartButtonPressed()
+    public void btnStartPressed()
     {
         Debug.Log("Start Button Pressed");
+
     }
 
-    public void OptionButtonPressed()
+    public void btnSettingsPressed()
     {
-        Debug.Log("Option Button Pressed");
+        Debug.Log("Settings Button Pressed");
     }
 
-    public void ExitButtonPressed()
+    public void btnExitPressed()
     {
         Debug.Log("Exit Button Pressed");
+        Application.Quit();
     }
 }
