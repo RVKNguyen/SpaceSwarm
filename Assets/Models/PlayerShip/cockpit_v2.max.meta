@@ -1,20 +1,10 @@
 fileFormatVersion: 2
-guid: e013f185e6184aa41b04434cde56717d
+guid: 08b6de93c6ad8f144adc1c8a56d11c09
 timeCreated: 1433002106
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
-  fileIDToRecycleName:
-    100000: Cockpit
-    100002: //RootNode
-    100004: ViewCamera
-    400000: Cockpit
-    400002: //RootNode
-    400004: ViewCamera
-    2300000: Cockpit
-    3300000: Cockpit
-    4300000: Cockpit
-    9500000: //RootNode
+  fileIDToRecycleName: {}
   materials:
     importMaterials: 1
     materialName: 0
