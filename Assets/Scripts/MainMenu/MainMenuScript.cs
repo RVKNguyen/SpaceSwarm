@@ -3,20 +3,11 @@ using System.Collections;
 
 public class MainMenuScript : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
     public void btnStartPressed()
     {
         Debug.Log("Start Button Pressed");
-
+        StartCoroutine(WaitForSeconds(2000));
+        Application.LoadLevel(1);
     }
 
     public void btnSettingsPressed()
@@ -28,5 +19,12 @@ public class MainMenuScript : MonoBehaviour {
     {
         Debug.Log("Exit Button Pressed");
         Application.Quit();
+    }
+
+    IEnumerator WaitForSeconds(float time)
+    {
+        Debug.Log("BEFORE");
+        yield return new WaitForSeconds(time);
+        Debug.Log("AFTER");
     }
 }

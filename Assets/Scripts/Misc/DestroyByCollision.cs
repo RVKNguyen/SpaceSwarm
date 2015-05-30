@@ -46,29 +46,25 @@ public class DestroyByCollision : MonoBehaviour
 
     void OnDestroy()
     {
-        MainMenuScript script = transform.parent.gameObject.GetComponent<MainMenuScript>();
-        
-        //Debug.Log(this.name);
-        switch (this.name) 
-        {
-            case "btn_Start":
-                script.btnStartPressed();
-                GameObject[] gos;
-                gos = GameObject.FindGameObjectsWithTag("Button");
-                foreach (GameObject go in gos)
-                {
-                    Destroy(go);
-                }
-                break;
-            case "btn_Settings":
-                script.btnSettingsPressed();
-                break;
-            case "btn_Exit": 
-                script.btnExitPressed();
-                break;
-            default:
-                Debug.Log("Nichts passiert!");
-                break;
+        if(transform.parent != null){
+            MainMenuScript script = transform.parent.gameObject.GetComponent<MainMenuScript>();
+            
+            //Debug.Log(this.name);
+            switch (this.name) 
+            {
+                case "btn_Start":
+                    script.btnStartPressed();
+                    break;
+                case "btn_Settings":
+                    script.btnSettingsPressed();
+                    break;
+                case "btn_Exit": 
+                    script.btnExitPressed();
+                    break;
+                default:
+                    Debug.Log("Nichts passiert!");
+                    break;
+            }
         }
     }
 }
