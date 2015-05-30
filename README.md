@@ -1,5 +1,8 @@
 # SpaceSwarm
-Space Shooter build with unity optional for google cardboard
+
+Space Shooter build with unity optional for google cardboard.
+This game takes part of the Microsoft Tech Camps 2015.
+https://msevents.microsoft.com/CUI/EventDetail.aspx?EventID=1032619205&Culture=de-DE&community=0
 
 ## Resources
 ### Cardboard SDK: https:
