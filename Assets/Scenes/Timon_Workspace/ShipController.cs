@@ -3,7 +3,7 @@ using System.Collections;
 
 public delegate void Action();
 
-public class ShipController : MonoBehaviour {
+public class SpaceShipController : MonoBehaviour {
 
 	public float Life;
 	public float MaxLife;

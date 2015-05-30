@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class Effect : MonoBehaviour {
 	void Start() {
-		shipController = gameObject.GetComponent<ShipController> ();
+		shipController = gameObject.GetComponent<SpaceShipController> ();
 		CurrentLifeTime = 0F;
 			MaxLifeTime = 1F;
 	}
@@ -14,7 +14,7 @@ public class Effect : MonoBehaviour {
 
 	}
 
-	protected ShipController shipController;
+	protected SpaceShipController shipController;
 	public float MaxLifeTime;
 	public float CurrentLifeTime;
 }
