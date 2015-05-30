@@ -20,3 +20,6 @@ http://alexcpeterson.com/spacescape/
 
 ### Use Skybox
 http://docs.unity3d.com/Manual/HOWTO-UseSkybox.html
+
+### Additional Sounds
+http://soundbible.com/1467-Grenade-Explosion.html
