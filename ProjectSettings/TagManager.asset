@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Boundary
   - Enemy
+  - Button
   layers:
   - Default
   - TransparentFX
