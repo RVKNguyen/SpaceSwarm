@@ -8,12 +8,42 @@ ModelImporter:
     100000: Cockpit
     100002: //RootNode
     100004: ViewCamera
+    100006: Box001
+    100008: BtnBottom
+    100010: BtnTop
+    100012: leftMonitor
+    100014: MainMonitor
+    100016: rightMonitor
     400000: Cockpit
     400002: //RootNode
     400004: ViewCamera
+    400006: Box001
+    400008: BtnBottom
+    400010: BtnTop
+    400012: leftMonitor
+    400014: MainMonitor
+    400016: rightMonitor
     2300000: Cockpit
+    2300002: Box001
+    2300004: BtnBottom
+    2300006: BtnTop
+    2300008: leftMonitor
+    2300010: MainMonitor
+    2300012: rightMonitor
     3300000: Cockpit
+    3300002: Box001
+    3300004: BtnBottom
+    3300006: BtnTop
+    3300008: leftMonitor
+    3300010: MainMonitor
+    3300012: rightMonitor
     4300000: Cockpit
+    4300002: Box001
+    4300004: BtnBottom
+    4300006: BtnTop
+    4300008: MainMonitor
+    4300010: leftMonitor
+    4300012: rightMonitor
     9500000: //RootNode
   materials:
     importMaterials: 1
