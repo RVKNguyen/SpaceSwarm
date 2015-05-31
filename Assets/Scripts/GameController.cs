@@ -7,8 +7,13 @@ public class GameController : MonoBehaviour {
     public Transform asteroid2;
     public Transform asteroid3;
 
+    private int score;
+    public GUIText scoreText;
+
 	// Use this for initialization
 	void Start () {
+        score = 0;
+        UpdateScore();
         StartCoroutine(SpawnAsteroids());
 	}
 	
@@ -16,6 +21,17 @@ public class GameController : MonoBehaviour {
 	void Update () {
         
 	}
+
+    void UpdateScore()
+    {
+        scoreText.text = "Score: " + score;
+    }
+
+    public void AddScore(int earnedScore)
+    {
+        score += earnedScore;
+        UpdateScore();
+    }
 
     IEnumerator SpawnAsteroids()
     {

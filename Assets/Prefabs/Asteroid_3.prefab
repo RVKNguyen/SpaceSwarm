@@ -121,7 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 100004, guid: a6d58f54ce5934781962a4f887e834f3, type: 2}
   playerExplosion: {fileID: 100008, guid: 3455fe69f7ddc4604b95bf9b0a1e88d7, type: 2}
-  scoreValue: 10
+  scoreValue: 100
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
