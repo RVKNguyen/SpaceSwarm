@@ -418,7 +418,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 874971855}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da25029e2f6043a4f9a3753e02b345c3, type: 3}
   m_Name: 
@@ -526,6 +526,9 @@ MonoBehaviour:
   boundaryMaxX: 5
   boundaryMinY: -5
   boundaryMaxY: 5
+  shot: {fileID: 100000, guid: f4ec271e525e14ca9927a07e6a2e153d, type: 2}
+  shotSpawn: {fileID: 1709774416}
+  fireRate: .100000001
 --- !u!54 &874971868
 Rigidbody:
   m_ObjectHideFlags: 0
