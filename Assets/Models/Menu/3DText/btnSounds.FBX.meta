@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 56f43a3e395e9ee4cbdf359741ab936d
-timeCreated: 1433041617
+guid: fb34b40fe88613e408382309c313b933
+timeCreated: 1433064600
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: TextCardboard
+    4300000: TextSounds
   materials:
     importMaterials: 1
     materialName: 0
