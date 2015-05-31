@@ -37,7 +37,7 @@ public class GameController : MonoBehaviour {
     {
         while(true)
         {
-            float spawnTimer = Random.Range(0.5F, 2.0F);
+            float spawnTimer = Random.Range(0.25F, 1.5F);
 
             int random = Random.Range(1, 4);
             int randomX = Random.Range(-5, 5);
