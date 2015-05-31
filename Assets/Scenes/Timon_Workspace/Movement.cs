@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SpaceShipController : MonoBehaviour {
+public class ShipController : MonoBehaviour {
 
 	public float Speed = 1F;
 	public float WeaponLockTime = 4F;
@@ -52,9 +52,9 @@ public class SpaceShipController : MonoBehaviour {
 			if (currentlyLockedObject != null) {
 				currentlyLockedObject.GetComponent<EffectsController>().Add<DamageEffect>();
 				
-				currentlyLockedObject.GetComponent<SpaceShipController>().DieEvent += () => {
-					DestroyObject(currentlyLockedObject);
-				};
+				//currentlyLockedObject.GetComponent<ShipController>().DieEvent += () => {
+				//	DestroyObject(currentlyLockedObject);
+				//};
 
 			}
 		}
