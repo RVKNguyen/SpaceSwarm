@@ -17,10 +17,11 @@ public class MovementController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
+        float moveHorizontal = transform.FindChild("Head").transform.forward.x;
+        float moveVertical = transform.FindChild("Head").transform.forward.y;
 
-        Debug.Log(transform.FindChild("Head").transform.forward);
+        //Debug.Log();
+        //Debug.Log();
 
         Vector3 movement = new Vector3(moveHorizontal, moveVertical, 0.0f);
         GetComponent<Rigidbody>().velocity = movement * speed;

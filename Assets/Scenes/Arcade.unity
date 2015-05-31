@@ -522,11 +522,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   tilt: 2
-  boundary:
-    xMin: -10
-    xMax: 10
-    zMin: -10
-    zMax: 10
+  boundaryMinX: -5
+  boundaryMaxX: 5
+  boundaryMinY: -5
+  boundaryMaxY: 5
 --- !u!54 &874971868
 Rigidbody:
   m_ObjectHideFlags: 0
