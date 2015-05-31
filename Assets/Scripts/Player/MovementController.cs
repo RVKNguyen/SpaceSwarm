@@ -20,9 +20,6 @@ public class MovementController : MonoBehaviour {
         float moveHorizontal = transform.FindChild("Head").transform.forward.x;
         float moveVertical = transform.FindChild("Head").transform.forward.y;
 
-        //Debug.Log();
-        //Debug.Log();
-
         Vector3 movement = new Vector3(moveHorizontal, moveVertical, 0.0f);
         GetComponent<Rigidbody>().velocity = movement * speed;
 
