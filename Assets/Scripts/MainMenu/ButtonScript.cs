@@ -7,8 +7,12 @@ public class ButtonScript : MonoBehaviour {
 
 	void OnTriggerEnter (Collider other)
 	{
-		if (explosion != null)
+
+        Debug.Log(explosion);
+        if (explosion != null)
 		{
+            //explosion.GetComponent<Animation>().Play();
+
 			Instantiate(explosion, transform.position, transform.rotation);
 		}
 
@@ -30,6 +34,19 @@ public class ButtonScript : MonoBehaviour {
                     //Debug.Log("Exit pressed");
                     script.btnExitPressed();
                     break;
+                case "btnStartExplode":
+                    //Debug.Log("Start pressed");
+                    script.btnStartPressed();
+                    break;
+                case "btnOptionsExplode":
+                    //Debug.Log("Settings pressed");
+                    script.btnSettingsPressed();
+                    break;
+                case "btnExitExplode":
+                    //Debug.Log("Exit pressed");
+                    script.btnExitPressed();
+                    break;
+
                 default:
                     Debug.Log("Nothing");
                     break;
