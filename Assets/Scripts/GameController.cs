@@ -8,12 +8,16 @@ public class GameController : MonoBehaviour {
     public Transform asteroid3;
 
     private int score;
+    private int life;
+
     public GUIText scoreText;
+    public GUIText lifeText;
 
 	// Use this for initialization
 	void Start () {
         score = 0;
-        UpdateScore();
+        life = 100;
+        UpdateText();
         StartCoroutine(SpawnAsteroids());
 	}
 	
@@ -22,17 +26,36 @@ public class GameController : MonoBehaviour {
         
 	}
 
-    void UpdateScore()
+    // controlling gamestats (score, life)
+    void UpdateText()
     {
         scoreText.text = "Score: " + score;
+
+        if (life > 0)
+        {
+            lifeText.text = "Life: " + life;
+        }
+        else
+        {
+            lifeText.text = "GAME OVER!";
+        }
     }
 
-    public void AddScore(int earnedScore)
+    public void UpdateScore(int scorePoints)
     {
-        score += earnedScore;
-        UpdateScore();
+        score += scorePoints;
+        UpdateText();
     }
 
+    public void UpdateLife(int lifePoints)
+    {
+        life += lifePoints;
+        UpdateText();
+    }
+
+    // controlling gameevents (spawning asteroids)
+    // TODO: Spawning Enemys
+    // TODO: Spawning Powerups
     IEnumerator SpawnAsteroids()
     {
         while(true)

@@ -11,7 +11,7 @@ public class DestroyByCollision : MonoBehaviour
 	void Start ()
 	{
 		GameObject gameControllerObject = GameObject.FindGameObjectWithTag ("EventSystem");
-        Debug.Log(gameControllerObject);
+        //Debug.Log(gameControllerObject);
 		if (gameControllerObject != null)
 		{
 			gameController = gameControllerObject.GetComponent <GameController>();
@@ -36,11 +36,12 @@ public class DestroyByCollision : MonoBehaviour
 
 		if (other.tag == "Player")
 		{
-			Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
+            Debug.Log("AUA!");
+			//Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
 			//gameController.GameOver();
 		}
 		
-        gameController.AddScore(scoreValue);
+        gameController.UpdateScore(scoreValue);
 		Destroy (other.gameObject);
 		Destroy (gameObject);
 	}

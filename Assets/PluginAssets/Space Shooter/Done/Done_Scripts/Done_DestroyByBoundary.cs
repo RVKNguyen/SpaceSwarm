@@ -5,6 +5,14 @@ public class Done_DestroyByBoundary : MonoBehaviour
 {
 	void OnTriggerExit (Collider other) 
 	{
-		Destroy(other.gameObject);
+        if (other.gameObject.tag == "Shot")
+        {
+            Destroy(other.gameObject);
+        }
+        else
+        {
+            Destroy(other.gameObject.transform.parent.gameObject);
+        }
+        
 	}
 }
