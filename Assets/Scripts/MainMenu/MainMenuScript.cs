@@ -23,8 +23,8 @@ public class MainMenuScript : MonoBehaviour {
 
     IEnumerator WaitForSeconds(float time)
     {
-        Debug.Log("BEFORE");
+        //Debug.Log("BEFORE");
         yield return new WaitForSeconds(time);
-        Debug.Log("AFTER");
+        //Debug.Log("AFTER");
     }
 }

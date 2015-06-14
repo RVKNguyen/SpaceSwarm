@@ -304,6 +304,14 @@ Prefab:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5411746, guid: 22d96d411a443e049958794e927e3c54, type: 2}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 160790, guid: 22d96d411a443e049958794e927e3c54, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22d96d411a443e049958794e927e3c54, type: 2}
   m_IsPrefabParent: 0
@@ -527,6 +535,23 @@ MonoBehaviour:
   asteroid3: {fileID: 400002, guid: 834bfaee90a9d4e04b1e8c1ca22cc88e, type: 2}
   scoreText: {fileID: 838522642}
   lifeText: {fileID: 89091934}
+--- !u!1 &1595579187 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 160790, guid: 22d96d411a443e049958794e927e3c54, type: 2}
+  m_PrefabInternal: {fileID: 694257067}
+--- !u!136 &1595579189
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1595579187}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: .400000006
+  m_Height: 2.20000005
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: .540000021}
 --- !u!4 &1665213541 stripped
 Transform:
   m_PrefabParentObject: {fileID: 496698, guid: 22d96d411a443e049958794e927e3c54, type: 2}

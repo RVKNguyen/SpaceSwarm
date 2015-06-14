@@ -36,13 +36,22 @@ public class DestroyByCollision : MonoBehaviour
 
 		if (other.tag == "Player")
 		{
-            Debug.Log("AUA!");
-			//Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
-			//gameController.GameOver();
+
+            gameController.UpdateLife(Random.Range(-35, -25));
+            if (gameController.GetLife() < 0)
+            {
+                Destroy(other.gameObject);
+                gameController.GameOver();
+            }
+            Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
 		}
 		
+        if (other.tag == "Shot")
+        {
+            Destroy(other.gameObject);
+        }
+
         gameController.UpdateScore(scoreValue);
-		Destroy (other.gameObject);
 		Destroy (gameObject);
 	}
 
@@ -62,6 +71,9 @@ public class DestroyByCollision : MonoBehaviour
                     break;
                 case "btn_Exit": 
                     script.btnExitPressed();
+                    break;
+                case "btn_GameOver":
+                    Debug.Log("NOOOOOOOOOOOO");
                     break;
                 default:
                     Debug.Log("Nichts passiert!");

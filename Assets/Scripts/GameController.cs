@@ -53,6 +53,21 @@ public class GameController : MonoBehaviour {
         UpdateText();
     }
 
+    public int GetLife()
+    {
+        return life;
+    }
+
+    public int GetScore()
+    {
+        return score;
+    }
+
+    public void GameOver()
+    {
+        Debug.Log("GameOver");
+    }
+
     // controlling gameevents (spawning asteroids)
     // TODO: Spawning Enemys
     // TODO: Spawning Powerups
