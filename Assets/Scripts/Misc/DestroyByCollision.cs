@@ -24,20 +24,20 @@ public class DestroyByCollision : MonoBehaviour
 
 	void OnTriggerEnter (Collider other)
 	{
-		if (other.tag == "Boundary" || other.tag == "Enemy")
+        if (other.tag == "Boundary" || other.tag == "Enemy" || other.tag == "Button")
 		{
 			return;
 		}
 
 		if (explosion != null)
 		{
-			Instantiate(explosion, transform.position, transform.rotation);
+            Instantiate(explosion, transform.position, transform.rotation);
 		}
 
 		if (other.tag == "Player")
 		{
 
-            gameController.UpdateLife(Random.Range(-35, -25));
+            gameController.UpdateLife(Random.Range(-90, -80));
             if (gameController.GetLife() < 0)
             {
                 Destroy(other.gameObject);
@@ -48,11 +48,12 @@ public class DestroyByCollision : MonoBehaviour
 		
         if (other.tag == "Shot")
         {
+            Destroy(gameObject);
             Destroy(other.gameObject);
+            gameController.UpdateScore(scoreValue);
         }
 
-        gameController.UpdateScore(scoreValue);
-		Destroy (gameObject);
+        
 	}
 
     void OnDestroy()
@@ -73,7 +74,7 @@ public class DestroyByCollision : MonoBehaviour
                     script.btnExitPressed();
                     break;
                 case "btn_GameOver":
-                    Debug.Log("NOOOOOOOOOOOO");
+                    Application.LoadLevel(1);
                     break;
                 default:
                     Debug.Log("Nichts passiert!");

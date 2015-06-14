@@ -21,6 +21,12 @@ public class MainMenuScript : MonoBehaviour {
         Application.Quit();
     }
 
+    public void btnRestart()
+    {
+        Debug.Log("Restart Button Pressed");
+        Application.LoadLevel(1);
+    }
+
     IEnumerator WaitForSeconds(float time)
     {
         //Debug.Log("BEFORE");
