@@ -533,6 +533,7 @@ MonoBehaviour:
   asteroid1: {fileID: 400000, guid: 7d5f7699d6d1d48e485ac71126e12061, type: 2}
   asteroid2: {fileID: 400002, guid: 9143e2b62ad50488482f9b73672fc331, type: 2}
   asteroid3: {fileID: 400002, guid: 834bfaee90a9d4e04b1e8c1ca22cc88e, type: 2}
+  buttonGameOver: {fileID: 454158, guid: 86570f4b5322b5a46b64074f0b0fad10, type: 2}
   scoreText: {fileID: 838522642}
   lifeText: {fileID: 89091934}
 --- !u!1 &1595579187 stripped
