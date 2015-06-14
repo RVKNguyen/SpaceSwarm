@@ -78,7 +78,7 @@ public class MovementController : MonoBehaviour {
             {
                 //Debug.Log("BUTTON!");
                 selectionTime -= Time.deltaTime;
-                Debug.Log(selectionTime);
+                //Debug.Log(selectionTime);
                 if (selectionTime <= 0)
                 {
                     Shoot();

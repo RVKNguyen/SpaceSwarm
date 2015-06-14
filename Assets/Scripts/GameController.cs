@@ -7,8 +7,12 @@ public class GameController : MonoBehaviour {
     public Transform asteroid2;
     public Transform asteroid3;
 
+    public Transform buttonGameOver;
+
     private int score;
     private int life;
+    private bool running;
+    private float dif;
 
     public GUIText scoreText;
     public GUIText lifeText;
@@ -17,6 +21,8 @@ public class GameController : MonoBehaviour {
 	void Start () {
         score = 0;
         life = 100;
+        running = true;
+        dif = 0F;
         UpdateText();
         StartCoroutine(SpawnAsteroids());
 	}
@@ -37,7 +43,7 @@ public class GameController : MonoBehaviour {
         }
         else
         {
-            lifeText.text = "GAME OVER!";
+            lifeText.text = "--------";
         }
     }
 
@@ -53,14 +59,39 @@ public class GameController : MonoBehaviour {
         UpdateText();
     }
 
+    public int GetLife()
+    {
+        return life;
+    }
+
+    public int GetScore()
+    {
+        return score;
+    }
+
+    public void GameOver()
+    {
+        running = false;
+        Instantiate(buttonGameOver, new Vector3(0 , 0, 5F), new Quaternion(0, 270, 0, 0));
+        Debug.Log("GameOver");
+    }
+
     // controlling gameevents (spawning asteroids)
     // TODO: Spawning Enemys
     // TODO: Spawning Powerups
+    // TODO: Difficulty
+
+    
+
     IEnumerator SpawnAsteroids()
     {
-        while(true)
+        while(running)
         {
-            float spawnTimer = Random.Range(0.25F, 1.5F);
+            float spawnTimer = Random.Range(0.25F, 2.0F - dif);
+
+            if (dif < 1.5F ){
+                dif += 0.02F;
+            }
 
             int random = Random.Range(1, 4);
             int randomX = Random.Range(-5, 5);
@@ -69,7 +100,7 @@ public class GameController : MonoBehaviour {
             switch (random)
             {
                  case 1:
-                    Instantiate(asteroid1, new Vector3(randomX, randomY, 25), Quaternion.identity);
+                     Instantiate(asteroid1, new Vector3(randomX, randomY, 25), Quaternion.identity);
                      break;
                  case 2:
                      Instantiate(asteroid2, new Vector3(randomX, randomY, 25), Quaternion.identity);

@@ -24,26 +24,36 @@ public class DestroyByCollision : MonoBehaviour
 
 	void OnTriggerEnter (Collider other)
 	{
-		if (other.tag == "Boundary" || other.tag == "Enemy")
+        if (other.tag == "Boundary" || other.tag == "Enemy" || other.tag == "Button")
 		{
 			return;
 		}
 
 		if (explosion != null)
 		{
-			Instantiate(explosion, transform.position, transform.rotation);
+            Instantiate(explosion, transform.position, transform.rotation);
 		}
 
 		if (other.tag == "Player")
 		{
-            Debug.Log("AUA!");
-			//Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
-			//gameController.GameOver();
+
+            gameController.UpdateLife(Random.Range(-90, -80));
+            if (gameController.GetLife() < 0)
+            {
+                Destroy(other.gameObject);
+                gameController.GameOver();
+            }
+            Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
 		}
 		
-        gameController.UpdateScore(scoreValue);
-		Destroy (other.gameObject);
-		Destroy (gameObject);
+        if (other.tag == "Shot")
+        {
+            Destroy(gameObject);
+            Destroy(other.gameObject);
+            gameController.UpdateScore(scoreValue);
+        }
+
+        
 	}
 
     void OnDestroy()
@@ -62,6 +72,9 @@ public class DestroyByCollision : MonoBehaviour
                     break;
                 case "btn_Exit": 
                     script.btnExitPressed();
+                    break;
+                case "btn_GameOver":
+                    Application.LoadLevel(1);
                     break;
                 default:
                     Debug.Log("Nichts passiert!");
