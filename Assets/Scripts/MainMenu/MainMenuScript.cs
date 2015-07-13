@@ -13,6 +13,8 @@ public class MainMenuScript : MonoBehaviour {
     public void btnSettingsPressed()
     {
         Debug.Log("Settings Button Pressed");
+        StartCoroutine(WaitForSeconds(2000));
+        Application.LoadLevel(2);
     }
 
     public void btnExitPressed()

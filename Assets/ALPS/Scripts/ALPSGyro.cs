@@ -28,7 +28,7 @@ public class ALPSGyro : MonoBehaviour {
 	//=====================================================================================================
 
 	/**Private**/
-	private Quaternion landscapeLeft = Quaternion.Euler(90, 0, 0);
+    //private Quaternion landscapeLeft = Quaternion.Euler(90, 0, 0);
 	private Quaternion orientation = Quaternion.identity;
 	private float q0,q1,q2,q3;
 
