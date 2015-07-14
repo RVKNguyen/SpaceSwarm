@@ -29,7 +29,7 @@ public class GameController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        
+
 	}
 
     // controlling gamestats (score, life)
@@ -40,10 +40,16 @@ public class GameController : MonoBehaviour {
         if (life > 0)
         {
             lifeText.text = "Life: " + life;
+            
+            if (life < 20)
+            {
+                GetComponent<AudioSource>().Play();
+            }
         }
         else
         {
             lifeText.text = "--------";
+            GetComponent<AudioSource>().Pause();
         }
     }
 

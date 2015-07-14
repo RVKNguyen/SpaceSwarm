@@ -6,14 +6,12 @@ public class MainMenuScript : MonoBehaviour {
     public void btnStartPressed()
     {
         Debug.Log("Start Button Pressed");
-        StartCoroutine(WaitForSeconds(2000));
         Application.LoadLevel(1);
     }
 
     public void btnSettingsPressed()
     {
         Debug.Log("Settings Button Pressed");
-        StartCoroutine(WaitForSeconds(2000));
         Application.LoadLevel(2);
     }
 
@@ -27,12 +25,5 @@ public class MainMenuScript : MonoBehaviour {
     {
         Debug.Log("Restart Button Pressed");
         Application.LoadLevel(1);
-    }
-
-    IEnumerator WaitForSeconds(float time)
-    {
-        //Debug.Log("BEFORE");
-        yield return new WaitForSeconds(time);
-        //Debug.Log("AFTER");
     }
 }
