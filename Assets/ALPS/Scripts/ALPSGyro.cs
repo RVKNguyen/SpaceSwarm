@@ -53,7 +53,7 @@ public class ALPSGyro : MonoBehaviour {
 	public void LateUpdate () {
 		#if UNITY_ANDROID
 		getOrientation();
-		transform.localRotation = landscapeLeft * orientation;
+		//transform.localRotation = landscapeLeft * orientation;
 		#endif
 	}
 
