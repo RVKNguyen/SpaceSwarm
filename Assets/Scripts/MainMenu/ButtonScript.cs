@@ -4,6 +4,9 @@ using System.Collections;
 public class ButtonScript : MonoBehaviour {
 
     public GameObject explosion;
+    public AudioClip explosion_asteroid;
+    public AudioSource audioSource;
+
 
 	void OnTriggerEnter (Collider other)
 	{
@@ -13,6 +16,10 @@ public class ButtonScript : MonoBehaviour {
             Debug.Log(explosion);
             if (explosion != null)
             {
+                audioSource.clip = explosion_asteroid;
+                audioSource.Play();
+                Debug.Log("Sounds should have been played.");
+
                 //explosion.GetComponent<Animation>().Play();
                 Instantiate(explosion, transform.position, transform.rotation);
             }
