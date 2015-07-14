@@ -21,10 +21,9 @@ http://alexcpeterson.com/spacescape/
 ### Use Skybox
 http://docs.unity3d.com/Manual/HOWTO-UseSkybox.html
 
-### Additional Sounds
-http://soundbible.com/1467-Grenade-Explosion.html
-
 ### Textures
 http://naldzgraphics.net/textures/free-seamless-metal-textures/
 http://sweetsoulsister.deviantart.com/art/Brushed-Metal-Silver-Texture-145936387
 http://laliah.deviantart.com/art/Brushed-Metal-259135191
+
+### Sounds in Cooperation with Paulius Jakonis
