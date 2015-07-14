@@ -118,6 +118,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 100004, guid: 2857e183f4cd3df4e9096e5b578bd32f, type: 2}
+  explosion_asteroid: {fileID: 8300000, guid: 3dc7455402dfa462b89a4bbd513955e9, type: 3}
+  audioSource: {fileID: 0}
 --- !u!65 &266662688
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -233,6 +235,10 @@ Prefab:
       propertyPath: m_Name
       value: btn_Exit
       objectReference: {fileID: 0}
+    - target: {fileID: 11450670, guid: 403849da33cabc244ba19b600d3f214d, type: 2}
+      propertyPath: explosion_asteroid
+      value: 
+      objectReference: {fileID: 8300000, guid: 3dc7455402dfa462b89a4bbd513955e9, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 403849da33cabc244ba19b600d3f214d, type: 2}
   m_IsPrefabParent: 0
@@ -430,6 +436,10 @@ Prefab:
       propertyPath: m_Name
       value: btn_Start
       objectReference: {fileID: 0}
+    - target: {fileID: 11460816, guid: d3ae39cf9290075408db85a78f5ed79e, type: 2}
+      propertyPath: explosion_asteroid
+      value: 
+      objectReference: {fileID: 8300000, guid: 3dc7455402dfa462b89a4bbd513955e9, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d3ae39cf9290075408db85a78f5ed79e, type: 2}
   m_IsPrefabParent: 0
@@ -437,6 +447,79 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 402356, guid: d3ae39cf9290075408db85a78f5ed79e, type: 2}
   m_PrefabInternal: {fileID: 1074887184}
+--- !u!1 &1074887186 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 178918, guid: d3ae39cf9290075408db85a78f5ed79e, type: 2}
+  m_PrefabInternal: {fileID: 1074887184}
+--- !u!82 &1074887187
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1074887186}
+  m_Enabled: 0
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 3dc7455402dfa462b89a4bbd513955e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1114041537
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,6 +622,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 100004, guid: 2857e183f4cd3df4e9096e5b578bd32f, type: 2}
+  explosion_asteroid: {fileID: 8300000, guid: 3dc7455402dfa462b89a4bbd513955e9, type: 3}
+  audioSource: {fileID: 0}
 --- !u!65 &1182858765
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -698,6 +783,10 @@ Prefab:
       propertyPath: m_Name
       value: btn_Settings
       objectReference: {fileID: 0}
+    - target: {fileID: 11460094, guid: 683ad1ba56d9f39488f998580f49f30c, type: 2}
+      propertyPath: explosion_asteroid
+      value: 
+      objectReference: {fileID: 8300000, guid: 3dc7455402dfa462b89a4bbd513955e9, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 683ad1ba56d9f39488f998580f49f30c, type: 2}
   m_IsPrefabParent: 0
@@ -786,6 +875,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 100004, guid: 2857e183f4cd3df4e9096e5b578bd32f, type: 2}
+  explosion_asteroid: {fileID: 8300000, guid: 3dc7455402dfa462b89a4bbd513955e9, type: 3}
+  audioSource: {fileID: 0}
 --- !u!65 &2090876914
 BoxCollider:
   m_ObjectHideFlags: 0
