@@ -5,8 +5,8 @@ This game takes part of the Microsoft Tech Camps 2015.
 https://msevents.microsoft.com/CUI/EventDetail.aspx?EventID=1032619205&Culture=de-DE&community=0
 
 ## Resources
-### Cardboard SDK: https:
-//developers.google.com/cardboard/unity/download
+### Cardboard SDK:
+https://developers.google.com/cardboard/unity/download
 
 ### ALPS-VR (for Windows Phone deployment):
 http://alpsvr.com/
@@ -21,10 +21,9 @@ http://alexcpeterson.com/spacescape/
 ### Use Skybox
 http://docs.unity3d.com/Manual/HOWTO-UseSkybox.html
 
-### Additional Sounds
-http://soundbible.com/1467-Grenade-Explosion.html
-
 ### Textures
 http://naldzgraphics.net/textures/free-seamless-metal-textures/
 http://sweetsoulsister.deviantart.com/art/Brushed-Metal-Silver-Texture-145936387
 http://laliah.deviantart.com/art/Brushed-Metal-259135191
+
+### Sounds in Cooperation with Paulius Jakonis
