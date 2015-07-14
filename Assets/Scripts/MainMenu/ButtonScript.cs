@@ -24,11 +24,6 @@ public class ButtonScript : MonoBehaviour {
                 Instantiate(explosion, transform.position, transform.rotation);
             }
 
-            if (this.name == "Btn_GameOver(Clone)")
-            {
-                Application.LoadLevel(1);
-            }
-
             if (transform.parent != null)
             {
                 MainMenuScript script = transform.parent.gameObject.GetComponent<MainMenuScript>();
