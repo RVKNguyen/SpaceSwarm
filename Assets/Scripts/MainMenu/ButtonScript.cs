@@ -38,9 +38,6 @@ public class ButtonScript : MonoBehaviour {
                         //Debug.Log("Settings pressed");
                         script.btnSettingsPressed();
                         break;
-                    case "btn_Sound":
-                        script.btnSoundsPressed();
-                        break;
                     case "btn_Exit":
                         //Debug.Log("Exit pressed");
                         script.btnExitPressed();

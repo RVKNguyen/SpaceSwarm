@@ -78,7 +78,8 @@ public class GameController : MonoBehaviour {
     public void GameOver()
     {
         running = false;
-        Instantiate(buttonGameOver, new Vector3(0 , 0, 5F), new Quaternion(0, 270, 0, 0));
+        Instantiate(buttonGameOver, new Vector3(0 , 0,
+            5F), new Quaternion(0, 270, 0, 0));
         Debug.Log("GameOver");
     }
 
