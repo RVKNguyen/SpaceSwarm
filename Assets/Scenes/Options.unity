@@ -1988,7 +1988,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 287193293}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b3144c14db032c4b878535d9ec8a067, type: 3}
+  m_Script: {fileID: 11500000, guid: b369ab6f6e8feac489c9c7ec48912a35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &289962008
@@ -3512,7 +3512,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 458212779}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -5139,7 +5139,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 785505774}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e64f63ad285c0a447aa792330f006442, type: 3}
   m_Name: 
@@ -10202,7 +10202,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1510390850}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e64f63ad285c0a447aa792330f006442, type: 3}
   m_Name: 

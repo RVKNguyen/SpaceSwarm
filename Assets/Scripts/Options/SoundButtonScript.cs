@@ -3,7 +3,7 @@ using System.Collections;
 
 public class SoundButtonScript : MonoBehaviour {
     public GameObject explosion;
-    public static bool soundOn;
+    public static bool soundOn = true;
     public AudioSource audioSource;
     public AudioClip soundOnOffClip;
     public Transform tick;
@@ -13,11 +13,8 @@ public class SoundButtonScript : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        if (GameObject.Find("check(Clone)") == null)
-        {
-            soundOn = true;
-            clone = (Instantiate(tick, new Vector3(1.8F, 3.12F, 7.98F), Quaternion.identity) as Transform).gameObject;
-        }
+        soundOn = true;
+        //clone = (Instantiate(tick, new Vector3(1.8F, 3.12F, 7.98F), Quaternion.identity) as Transform).gameObject;
     }
 
     void OnTriggerEnter(Collider other)
