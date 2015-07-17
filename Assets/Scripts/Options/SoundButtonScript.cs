@@ -32,5 +32,10 @@ public class SoundButtonScript : MonoBehaviour {
             clone = trans.gameObject;
             soundOn = true;
         }
+
+        if (gameObject.name == "btn_Sound")
+        {
+            Destroy(gameObject);
+        }
     }
 }
