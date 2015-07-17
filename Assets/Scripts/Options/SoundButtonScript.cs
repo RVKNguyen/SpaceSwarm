@@ -13,8 +13,7 @@ public class SoundButtonScript : MonoBehaviour {
     void Start()
     {
         soundOn = true;
-        trans = Instantiate(tick, new Vector3(1.8F, 3.12F, 7.98F), Quaternion.identity) as Transform;
-        clone = trans.gameObject;
+        clone = (Instantiate(tick, new Vector3(1.8F, 3.12F, 7.98F), Quaternion.identity) as Transform).gameObject;
     }
 
     void OnTriggerEnter(Collider other)
@@ -25,14 +24,15 @@ public class SoundButtonScript : MonoBehaviour {
         {
             audioSource.Play();
             Destroy(clone, 0.0F);
-            Destroy(clone, 0.0F);
         }
         else
         {
-            trans = Instantiate(tick, new Vector3(1.8F, 3.12F, 7.98F), Quaternion.identity) as Transform;
-            clone = trans.gameObject;
+            soundOn = true;
+            //trans = Instantiate(tick, new Vector3(1.8F, 3.12F, 7.98F), Quaternion.identity) as Transform;
+            //clone = trans.gameObject;
         }
-        Destroy(other.gameObject);
-        Destroy(gameObject);
+        soundOn = false;
+        //Destroy(other.gameObject);
+        //Destroy(gameObject);
     }
 }

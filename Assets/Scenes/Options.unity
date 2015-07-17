@@ -5116,6 +5116,36 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 776325585}
   m_Mesh: {fileID: 4300144, guid: bb5abef58b187684a865736ae1a4aade, type: 3}
+--- !u!1 &785505774 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: c81c14608a6bcd64b8fb2fe2707a6bb5, type: 3}
+  m_PrefabInternal: {fileID: 1451313305}
+--- !u!65 &785505775
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 785505774}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .800000012, y: 1, z: .800000012}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &785505776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 785505774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e64f63ad285c0a447aa792330f006442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 1866781492}
+  soundOnOffClip: {fileID: 8300000, guid: 3dc7455402dfa462b89a4bbd513955e9, type: 3}
+  tick: {fileID: 400000, guid: 01f04bda27fe66640bda6c59bdf17b45, type: 3}
 --- !u!1 &788719874
 GameObject:
   m_ObjectHideFlags: 0
@@ -9485,7 +9515,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c81c14608a6bcd64b8fb2fe2707a6bb5, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c81c14608a6bcd64b8fb2fe2707a6bb5, type: 3}
+      propertyPath: m_TagString
+      value: Button
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c81c14608a6bcd64b8fb2fe2707a6bb5, type: 3}
