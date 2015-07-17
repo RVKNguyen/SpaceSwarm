@@ -26,4 +26,10 @@ public class MainMenuScript : MonoBehaviour {
         Debug.Log("Restart Button Pressed");
         Application.LoadLevel(1);
     }
+
+    internal void btnSoundsPressed()
+
+    {
+        Debug.Log("Sound Button Pressed");
+    }
 }
