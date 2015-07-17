@@ -107,12 +107,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 271703882}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 620334f7f3605d34f91a1a359128e7a9, type: 3}
+  m_Script: {fileID: 11500000, guid: fe468cebe1b848e45ad14044bb031e67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 100004, guid: 2857e183f4cd3df4e9096e5b578bd32f, type: 2}
   explosion_asteroid: {fileID: 8300000, guid: 3dc7455402dfa462b89a4bbd513955e9, type: 3}
-  audioSource: {fileID: 1866781492}
+  audioSource: {fileID: 287193295}
 --- !u!65 &271703885
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -171,10 +171,11 @@ Transform:
   - {fileID: 483970132}
   - {fileID: 58269703}
   - {fileID: 271703883}
-  - {fileID: 1522158479}
   - {fileID: 1451313306}
+  - {fileID: 1522158479}
+  - {fileID: 1801069163}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!82 &287193295
 AudioSource:
   m_ObjectHideFlags: 0
@@ -314,7 +315,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!1 &458212779
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,6 +647,10 @@ Prefab:
       propertyPath: m_TagString
       value: Button
       objectReference: {fileID: 0}
+    - target: {fileID: 100400, guid: a725fd04fa143f84eab24175eb6771bc, type: 3}
+      propertyPath: m_Name
+      value: btnMenuExplode
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a725fd04fa143f84eab24175eb6771bc, type: 3}
   m_IsPrefabParent: 0
@@ -773,25 +778,25 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!1001 &1335218105
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 287193294}
     m_Modifications:
     - target: {fileID: 400000, guid: db1a9ac88e404ac4cac2b9e112abc905, type: 3}
       propertyPath: m_LocalPosition.x
-      value: .00999999978
+      value: 6.01000023
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: db1a9ac88e404ac4cac2b9e112abc905, type: 3}
       propertyPath: m_LocalPosition.y
-      value: .75999999
+      value: -3.6400001
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: db1a9ac88e404ac4cac2b9e112abc905, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.03999996
+      value: .0399999619
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: db1a9ac88e404ac4cac2b9e112abc905, type: 3}
       propertyPath: m_LocalRotation.x
@@ -811,7 +816,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: db1a9ac88e404ac4cac2b9e112abc905, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: db1a9ac88e404ac4cac2b9e112abc905, type: 3}
@@ -853,7 +858,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c81c14608a6bcd64b8fb2fe2707a6bb5, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: c81c14608a6bcd64b8fb2fe2707a6bb5, type: 3}
       propertyPath: m_TagString
@@ -911,7 +916,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ac002189d7afb614f92c0001d57a3942, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: ac002189d7afb614f92c0001d57a3942, type: 3}
       propertyPath: m_TagString
@@ -970,11 +975,33 @@ MonoBehaviour:
   audioSource: {fileID: 1866781492}
   soundOnOffClip: {fileID: 8300000, guid: 3dc7455402dfa462b89a4bbd513955e9, type: 3}
   tick: {fileID: 400000, guid: 01f04bda27fe66640bda6c59bdf17b45, type: 3}
+--- !u!4 &1801069163 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: db1a9ac88e404ac4cac2b9e112abc905, type: 3}
+  m_PrefabInternal: {fileID: 1335218105}
 --- !u!82 &1866781492 stripped
 AudioSource:
   m_PrefabParentObject: {fileID: 8259974, guid: 22d96d411a443e049958794e927e3c54,
     type: 2}
   m_PrefabInternal: {fileID: 755706695}
+--- !u!1 &1890435857 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: db1a9ac88e404ac4cac2b9e112abc905, type: 3}
+  m_PrefabInternal: {fileID: 1335218105}
+--- !u!114 &1890435860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1890435857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe468cebe1b848e45ad14044bb031e67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 100004, guid: 2857e183f4cd3df4e9096e5b578bd32f, type: 2}
+  explosion_asteroid: {fileID: 8300000, guid: 3dc7455402dfa462b89a4bbd513955e9, type: 3}
+  audioSource: {fileID: 287193295}
 --- !u!4 &1972591035
 Transform:
   m_ObjectHideFlags: 0
@@ -1047,4 +1074,4 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2

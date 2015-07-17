@@ -29,4 +29,6 @@ public class MainMenuScript : MonoBehaviour {
         Debug.Log("Restart Button Pressed");
         Application.LoadLevel(1);
     }
+
+
 }
