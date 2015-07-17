@@ -3,6 +3,9 @@ using System.Collections;
 
 public class MainMenuScript : MonoBehaviour {
 
+
+
+
     public void btnStartPressed()
     {
         Debug.Log("Start Button Pressed");
@@ -25,11 +28,5 @@ public class MainMenuScript : MonoBehaviour {
     {
         Debug.Log("Restart Button Pressed");
         Application.LoadLevel(1);
-    }
-
-    internal void btnSoundsPressed()
-
-    {
-        Debug.Log("Sound Button Pressed");
     }
 }
