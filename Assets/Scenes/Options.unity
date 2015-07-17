@@ -1910,7 +1910,7 @@ Transform:
   - {fileID: 1510390851}
   - {fileID: 289962009}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!82 &287193295
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3378,7 +3378,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!1 &447103031
 GameObject:
   m_ObjectHideFlags: 0
@@ -3472,6 +3472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e64f63ad285c0a447aa792330f006442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosion: {fileID: 100004, guid: a6d58f54ce5934781962a4f887e834f3, type: 2}
   audioSource: {fileID: 1866781492}
   soundOnOffClip: {fileID: 8300000, guid: 3dc7455402dfa462b89a4bbd513955e9, type: 3}
   tick: {fileID: 400000, guid: 01f04bda27fe66640bda6c59bdf17b45, type: 3}
@@ -5143,6 +5144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e64f63ad285c0a447aa792330f006442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosion: {fileID: 0}
   audioSource: {fileID: 1866781492}
   soundOnOffClip: {fileID: 8300000, guid: 3dc7455402dfa462b89a4bbd513955e9, type: 3}
   tick: {fileID: 400000, guid: 01f04bda27fe66640bda6c59bdf17b45, type: 3}
@@ -6712,7 +6714,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400400, guid: a725fd04fa143f84eab24175eb6771bc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.80000019
+      value: 5.51999998
       objectReference: {fileID: 0}
     - target: {fileID: 400400, guid: a725fd04fa143f84eab24175eb6771bc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8237,7 +8239,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1 &1295797881
 GameObject:
   m_ObjectHideFlags: 0
@@ -8486,6 +8488,48 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1318774551}
   m_Mesh: {fileID: 4300098, guid: bb5abef58b187684a865736ae1a4aade, type: 3}
+--- !u!1001 &1335218105
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: db1a9ac88e404ac4cac2b9e112abc905, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: .00999999978
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db1a9ac88e404ac4cac2b9e112abc905, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: .75999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db1a9ac88e404ac4cac2b9e112abc905, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.03999996
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db1a9ac88e404ac4cac2b9e112abc905, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db1a9ac88e404ac4cac2b9e112abc905, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db1a9ac88e404ac4cac2b9e112abc905, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db1a9ac88e404ac4cac2b9e112abc905, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -1.62920685e-07
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db1a9ac88e404ac4cac2b9e112abc905, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: db1a9ac88e404ac4cac2b9e112abc905, type: 3}
+  m_IsPrefabParent: 0
 --- !u!1 &1337385502
 GameObject:
   m_ObjectHideFlags: 0
@@ -10163,6 +10207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e64f63ad285c0a447aa792330f006442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosion: {fileID: 0}
   audioSource: {fileID: 1866781492}
   soundOnOffClip: {fileID: 8300000, guid: 3dc7455402dfa462b89a4bbd513955e9, type: 3}
   tick: {fileID: 400000, guid: 01f04bda27fe66640bda6c59bdf17b45, type: 3}
@@ -13680,4 +13725,4 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
