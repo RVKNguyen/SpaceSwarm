@@ -17,6 +17,7 @@ public class SoundButtonScript : MonoBehaviour {
         {
             soundOn = true;
             clone = (Instantiate(tick, new Vector3(1.8F, 3.12F, 7.98F), Quaternion.identity) as Transform).gameObject;
+            Debug.Log("Object created");
         }
     }
 
@@ -33,8 +34,8 @@ public class SoundButtonScript : MonoBehaviour {
         }
         else
         {
-            trans = Instantiate(tick, new Vector3(1.8F, 3.12F, 7.98F), Quaternion.identity) as Transform;
-            clone = trans.gameObject;
+            Debug.Log("Object created again");
+            clone = (Instantiate(tick, new Vector3(1.8F, 3.12F, 7.98F), Quaternion.identity) as Transform).gameObject;
             Debug.Log("soundOn is false");
             soundOn = true;
         }
