@@ -24,15 +24,13 @@ public class SoundButtonScript : MonoBehaviour {
         {
             audioSource.Play();
             Destroy(clone, 0.0F);
+            soundOn = false;
         }
         else
         {
+            trans = Instantiate(tick, new Vector3(1.8F, 3.12F, 7.98F), Quaternion.identity) as Transform;
+            clone = trans.gameObject;
             soundOn = true;
-            //trans = Instantiate(tick, new Vector3(1.8F, 3.12F, 7.98F), Quaternion.identity) as Transform;
-            //clone = trans.gameObject;
         }
-        soundOn = false;
-        //Destroy(other.gameObject);
-        //Destroy(gameObject);
     }
 }
