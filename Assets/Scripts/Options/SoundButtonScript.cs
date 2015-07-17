@@ -14,7 +14,6 @@ public class SoundButtonScript : MonoBehaviour {
     void Start()
     {
         soundOn = true;
-        //clone = (Instantiate(tick, new Vector3(1.8F, 3.12F, 7.98F), Quaternion.identity) as Transform).gameObject;
     }
 
     void OnTriggerEnter(Collider other)
@@ -30,7 +29,7 @@ public class SoundButtonScript : MonoBehaviour {
         }
         else
         {
-            trans = Instantiate(tick, new Vector3(1.8F, 3.12F, 7.98F), Quaternion.identity) as Transform;
+            trans = Instantiate(tick, new Vector3(2.3F, 3.12F, 7.98F), Quaternion.identity) as Transform;
             clone = trans.gameObject;
             Debug.Log("soundOn is false");
             soundOn = true;
