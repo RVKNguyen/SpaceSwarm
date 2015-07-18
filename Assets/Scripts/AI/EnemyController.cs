@@ -28,7 +28,7 @@ public class EnemyController : MonoBehaviour {
 
         if (fireRate <= 0)
         {
-            Debug.Log("Enemy Shot");
+            //Debug.Log("Enemy Shot");
 
             var spreadX = Random.Range(-10, -3);
             var spreadY = Random.Range(-3, 3);

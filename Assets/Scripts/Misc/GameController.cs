@@ -11,6 +11,9 @@ public class GameController : MonoBehaviour {
     public Transform enemy2;
     public Transform enemy3;
 
+    public Transform powerUp1;
+    public Transform powerUp2;
+
     public Transform buttonGameOver;
 
     private int score;
@@ -114,7 +117,7 @@ public class GameController : MonoBehaviour {
                 dif += 0.02F;
             }
 
-            int random = Random.Range(1, 7);
+            int random = Random.Range(1, 9);
             int randomX = Random.Range(-5, 5);
             int randomY = Random.Range(-5, 5);
 
@@ -137,6 +140,12 @@ public class GameController : MonoBehaviour {
                      break;
                  case 6:
                      Instantiate(enemy3, new Vector3(randomX, randomY, 25), Quaternion.Euler(0, 180, 0));
+                     break;
+                 case 7:
+                     Instantiate(powerUp1, new Vector3(randomX, randomY, 25), Quaternion.Euler(0, 180, 0));
+                     break;
+                 case 8:
+                     Instantiate(powerUp2, new Vector3(randomX, randomY, 25), Quaternion.Euler(0, 180, 0));
                      break;
 
                  default:
