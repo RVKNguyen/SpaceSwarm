@@ -6,11 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Assets/Models/Menu/Materials/No Name.mat
-  m_Name: No Name
-=======
   m_Name: 3DTextMaterial
->>>>>>> 94c6af5bb6cc2dd8b4fb2c5eabef87e49b72622c:Assets/Models/Menu/Materials/3DTextMaterial.mat
   m_Shader: {fileID: 4800000, guid: 0ff1a408fd74c7343bda6b316e00e833, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
