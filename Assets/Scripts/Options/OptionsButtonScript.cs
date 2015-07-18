@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ButtonScript : MonoBehaviour {
-
+public class OptionsButtonScript : MonoBehaviour {
     public GameObject explosion;
     public AudioClip explosion_asteroid;
     public AudioSource audioSource;
@@ -26,29 +25,13 @@ public class ButtonScript : MonoBehaviour {
 
             if (transform.parent != null)
             {
-                MainMenuScript script = transform.parent.gameObject.GetComponent<MainMenuScript>();
+                OptionsScript script = transform.parent.gameObject.GetComponent<OptionsScript>();
 
                 switch (this.name)
                 {
-                    case "btn_Start":
-                        //Debug.Log("Start pressed");
-                        script.btnStartPressed();
-                        break;
-                    case "btn_Settings":
-                        //Debug.Log("Settings pressed");
-                        script.btnSettingsPressed();
-                        break;
                     case "btn_Exit":
                         //Debug.Log("Exit pressed");
                         script.btnExitPressed();
-                        break;
-                    case "btnStartExplode":
-                        //Debug.Log("Start pressed");
-                        script.btnStartPressed();
-                        break;
-                    case "btnOptionsExplode":
-                        //Debug.Log("Settings pressed");
-                        script.btnSettingsPressed();
                         break;
                     case "btnMenuExplode":
                         script.btnStartPressed();

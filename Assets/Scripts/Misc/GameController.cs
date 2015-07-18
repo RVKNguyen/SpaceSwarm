@@ -29,11 +29,22 @@ public class GameController : MonoBehaviour {
         dif = 0F;
         UpdateText();
         StartCoroutine(SpawnAsteroids());
+
+        if (SoundButtonScript.soundOn)
+        {
+            Debug.Log("sound is on" + SoundButtonScript.soundOn);
+            AudioListener.volume = 1;
+        }
+        else
+        {
+            Debug.Log("sound is off" + SoundButtonScript.soundOn);
+            AudioListener.volume = 1 - AudioListener.volume;
+        }
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
+        
 	}
 
     // controlling gamestats (score, life)

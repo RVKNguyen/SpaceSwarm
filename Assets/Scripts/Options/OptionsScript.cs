@@ -2,14 +2,20 @@
 using System.Collections;
 
 public class OptionsScript : MonoBehaviour {
+    public void btnStartPressed()
+    {
+        Debug.Log("Start Button Pressed");
+        Application.LoadLevel(1);
+    }
+    internal void btnMenuPressed()
+    {
+        Debug.Log("Menu Button Pressed");
+        Application.LoadLevel(0);
+    }
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public void btnExitPressed()
+    {
+        Debug.Log("Exit Button Pressed");
+        Application.Quit();
+    }
 }
