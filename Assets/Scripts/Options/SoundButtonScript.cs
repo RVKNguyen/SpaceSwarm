@@ -24,21 +24,21 @@ public class SoundButtonScript : MonoBehaviour {
     {
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.clip = soundOnOffClip;
-		if (MainMenuScript.soundOn)
+		if (MainMenuScript.soundOn == false)
         {
-            audioSource.Play();
-            Destroy(clone, 0.0F);
-            Debug.Log("soundOn is true");
+			trans = Instantiate(tick, new Vector3(2.3F, 3.12F, 7.98F), Quaternion.identity) as Transform;
+			clone = trans.gameObject;
+			Debug.Log("soundOn is false");
 			MainMenuScript.soundOn = false;
-            AudioListener.volume = 1 - AudioListener.volume;
+			AudioListener.volume = 1 - AudioListener.volume;
         }
         else
         {
-            trans = Instantiate(tick, new Vector3(2.3F, 3.12F, 7.98F), Quaternion.identity) as Transform;
-            clone = trans.gameObject;
-            Debug.Log("soundOn is false");
+			audioSource.Play();
+			Destroy(clone, 0.0F);
+			Debug.Log("soundOn is true");
 			MainMenuScript.soundOn = true;
-            AudioListener.volume = 1;
+			AudioListener.volume = 1;
         }
 
         if (gameObject.name == "btn_Sound")

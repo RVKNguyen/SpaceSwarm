@@ -30,7 +30,7 @@ public class GameController : MonoBehaviour {
         UpdateText();
         StartCoroutine(SpawnAsteroids());
 
-        if (MainMenuScript.soundOn)
+        if (MainMenuScript.soundOn == true)
         {
             Debug.Log("sound is on" + MainMenuScript.soundOn);
             AudioListener.volume = 1;
