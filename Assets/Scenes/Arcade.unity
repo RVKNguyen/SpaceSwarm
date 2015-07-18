@@ -239,7 +239,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11494240, guid: 22d96d411a443e049958794e927e3c54, type: 2}
       propertyPath: vrModeEnabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 499546, guid: 22d96d411a443e049958794e927e3c54, type: 2}
       propertyPath: m_LocalPosition.z
