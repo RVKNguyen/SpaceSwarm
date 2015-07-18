@@ -237,18 +237,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 499546, guid: 22d96d411a443e049958794e927e3c54, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: .896000028
-      objectReference: {fileID: 0}
-    - target: {fileID: 499546, guid: 22d96d411a443e049958794e927e3c54, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -.280999988
-      objectReference: {fileID: 0}
-    - target: {fileID: 11406836, guid: 22d96d411a443e049958794e927e3c54, type: 2}
-      propertyPath: shotSpawn_middle
-      value: 
-      objectReference: {fileID: 1401099681}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22d96d411a443e049958794e927e3c54, type: 2}
   m_IsPrefabParent: 0
@@ -2811,10 +2799,6 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!4 &1401099681 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 499546, guid: 22d96d411a443e049958794e927e3c54, type: 2}
-  m_PrefabInternal: {fileID: 694257067}
 --- !u!1 &1710272648
 GameObject:
   m_ObjectHideFlags: 0

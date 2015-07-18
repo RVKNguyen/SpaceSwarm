@@ -53,13 +53,14 @@ public class MovementController : MonoBehaviour {
         RaycastHit hit;
         Camera camera = GetComponent<Camera>();
         var cameraCenter = camera.ScreenToWorldPoint(new Vector3(Screen.width / 2f, Screen.height / 2f, camera.nearClipPlane));
+        var ray = Physics.Raycast(cameraCenter, this.transform.forward, out hit, 10000);
 
-        if (Physics.Raycast(cameraCenter, this.transform.forward, out hit, 10000))
-        {
+        //Debug.Log("Forward: " + this.transform.forward);
+        if(Physics.SphereCast(cameraCenter, 2.0F, this.transform.forward, out hit, Mathf.Infinity)){
+            //Debug.Log("SphereHit: " + hit.transform.gameObject);
             var obj = hit.transform.gameObject;
             if (obj.tag == "Enemy")
             {
-                //Debug.Log("Shoot!");
                 Shoot();
             }
         }
@@ -71,17 +72,17 @@ public class MovementController : MonoBehaviour {
         Camera camera = GetComponent<Camera>();
         var cameraCenter = camera.ScreenToWorldPoint(new Vector3(Screen.width / 2f, Screen.height / 2f, camera.nearClipPlane));
 
+        Debug.DrawRay(cameraCenter, this.transform.forward, Color.red);
         if (Physics.Raycast(cameraCenter, this.transform.forward, out hit, 10000))
         {
             var obj = hit.transform.gameObject;
             if (obj.tag == "Button")
             {
-                //Debug.Log("BUTTON!");
                 selectionTime -= Time.deltaTime;
-                //Debug.Log(selectionTime);
                 if (selectionTime <= 0)
                 {
                     Shoot();
+                    selectionTime = 2;
                 }
             }
             else
@@ -94,8 +95,9 @@ public class MovementController : MonoBehaviour {
     {
         if (Time.time > nextFire)
         {
+            //Debug.Log("Shoot!");
             nextFire = Time.time + fireRate;
-            Debug.Log(shotSpawn_middle.rotation);
+            //Debug.Log(shotSpawn_middle.rotation);
             var angle =  Quaternion.Euler (new Vector3(0, 0, 0.5F )); 
             Instantiate(shot, shotSpawn_middle.position, shotSpawn_middle.rotation);
             GetComponent<AudioSource>().Play();
