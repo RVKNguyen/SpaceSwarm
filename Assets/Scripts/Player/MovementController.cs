@@ -52,11 +52,11 @@ public class MovementController : MonoBehaviour {
     {
         RaycastHit hit;
         Camera camera = GetComponent<Camera>();
-        var cameraCenter = camera.ScreenToWorldPoint(new Vector3(Screen.width / 2f, Screen.height / 2f, camera.nearClipPlane));
-        var ray = Physics.Raycast(cameraCenter, this.transform.forward, out hit, 10000);
+        var cameraCenter = camera.ScreenToWorldPoint(new Vector3(Screen.width / 1f, Screen.height / 2f, camera.nearClipPlane));
 
-        //Debug.Log("Forward: " + this.transform.forward);
-        if(Physics.SphereCast(cameraCenter, 2.0F, this.transform.forward, out hit, Mathf.Infinity)){
+        //Debug.Log("Forward: " + Camera.main.transform.forward);
+        if (Physics.SphereCast(cameraCenter, 0.3F, Camera.main.transform.forward, out hit, 1000))
+        {
             //Debug.Log("SphereHit: " + hit.transform.gameObject);
             var obj = hit.transform.gameObject;
             if (obj.tag == "Enemy")
@@ -72,7 +72,6 @@ public class MovementController : MonoBehaviour {
         Camera camera = GetComponent<Camera>();
         var cameraCenter = camera.ScreenToWorldPoint(new Vector3(Screen.width / 2f, Screen.height / 2f, camera.nearClipPlane));
 
-        Debug.DrawRay(cameraCenter, this.transform.forward, Color.red);
         if (Physics.Raycast(cameraCenter, this.transform.forward, out hit, 10000))
         {
             var obj = hit.transform.gameObject;
@@ -98,7 +97,11 @@ public class MovementController : MonoBehaviour {
             //Debug.Log("Shoot!");
             nextFire = Time.time + fireRate;
             //Debug.Log(shotSpawn_middle.rotation);
-            var angle =  Quaternion.Euler (new Vector3(0, 0, 0.5F )); 
+            var angle =  Quaternion.Euler (new Vector3(0, 0, 0.5F ));
+
+            var test = Camera.main.transform.forward;
+            Debug.Log(test.x);
+
             Instantiate(shot, shotSpawn_middle.position, shotSpawn_middle.rotation);
             GetComponent<AudioSource>().Play();
         }
