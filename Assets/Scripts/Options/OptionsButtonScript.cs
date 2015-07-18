@@ -34,13 +34,18 @@ public class OptionsButtonScript : MonoBehaviour {
                         script.btnExitPressed();
                         break;
                     case "btnMenuExplode":
-                        script.btnStartPressed();
+                        script.btnMenuPressed();
                         break;
                     case "btnExitExplode":
                         //Debug.Log("Exit pressed");
                         script.btnExitPressed();
                         break;
-
+					case "btn_Credits":
+						script.btnCreditsPressed();
+						break;
+					case "btnCredits":
+						script.btnCreditsPressed();
+						break;
                     default:
                         Debug.Log("Nothing");
                         break;

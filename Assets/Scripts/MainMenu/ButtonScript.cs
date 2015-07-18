@@ -50,9 +50,6 @@ public class ButtonScript : MonoBehaviour {
                         //Debug.Log("Settings pressed");
                         script.btnSettingsPressed();
                         break;
-                    case "btnMenuExplode":
-                        script.btnStartPressed();
-                        break;
                     case "btnExitExplode":
                         //Debug.Log("Exit pressed");
                         script.btnExitPressed();
