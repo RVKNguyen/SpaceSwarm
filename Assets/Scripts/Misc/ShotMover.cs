@@ -6,6 +6,6 @@ public class ShotMover : MonoBehaviour {
     public float speed;
     void Start()
     {
-        GetComponent<Rigidbody>().velocity = Camera.main.transform.forward * speed;
+        GetComponent<Rigidbody>().velocity = transform.forward * speed;
     }
 }

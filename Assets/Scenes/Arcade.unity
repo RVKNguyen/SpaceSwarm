@@ -241,6 +241,14 @@ Prefab:
       propertyPath: vrModeEnabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 499546, guid: 22d96d411a443e049958794e927e3c54, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: .977999985
+      objectReference: {fileID: 0}
+    - target: {fileID: 499546, guid: 22d96d411a443e049958794e927e3c54, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -.314999998
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22d96d411a443e049958794e927e3c54, type: 2}
   m_IsPrefabParent: 0
