@@ -71,7 +71,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleIdentifier: com.BeuthHochschule.SpaceSwarms
+  bundleIdentifier: com.Company.ProductName
   bundleVersion: 1.0
   preloadedAssets: []
   metroEnableIndependentInputSource: 0
@@ -139,9 +139,6 @@ PlayerSettings:
       m_Size: 128
   m_BuildTargetBatching: []
   m_BuildTargetGraphicsAPIs:
-  - m_BuildTarget: WindowsStandaloneSupport
-    m_APIs: 01000000
-    m_Automatic: 0
   - m_BuildTarget: AndroidPlayer
     m_APIs: 08000000
     m_Automatic: 0
@@ -207,7 +204,7 @@ PlayerSettings:
   ps4ApplicationParam3: 0
   ps4ApplicationParam4: 0
   ps4GarlicHeapSize: 2048
-  ps4Passcode: 1O8YFOGKjxRrJBdT3hVOfoaMeAjSWfch
+  ps4Passcode: 2R391UXaLHbavJvFZGfO47XWS2qVOw5l
   ps4pnSessions: 1
   ps4pnPresence: 1
   ps4pnFriends: 1
@@ -377,24 +374,20 @@ PlayerSettings:
   XboxOneAllowedProductIds: []
   XboxOnePersistentLocalStorageSize: 0
   intPropertyNames:
-  - Metro::ScriptingBackend
   - Standalone::ScriptingBackend
-  - WP8::ScriptingBackend
   - WebGL::ScriptingBackend
   - WebGL::audioCompressionFormat
   - WebGL::exceptionSupport
   - WebGL::memorySize
   - iOS::Architecture
   - iOS::ScriptingBackend
-  Metro::ScriptingBackend: 2
   Standalone::ScriptingBackend: 0
-  WP8::ScriptingBackend: 2
   WebGL::ScriptingBackend: 1
   WebGL::audioCompressionFormat: 4
-  WebGL::exceptionSupport: 0
+  WebGL::exceptionSupport: 1
   WebGL::memorySize: 256
   iOS::Architecture: 2
-  iOS::ScriptingBackend: 0
+  iOS::ScriptingBackend: 1
   boolPropertyNames:
   - WebGL::analyzeBuildSize
   - WebGL::dataCaching

@@ -2,8 +2,12 @@
 using System.Collections;
 
 public class MainMenuScript : MonoBehaviour {
+	public static bool soundOn;
 
-
+	void Awake ()
+	{
+		soundOn = true;
+	}
 
 
     public void btnStartPressed()
