@@ -278,7 +278,7 @@ GameObject:
   - 114: {fileID: 458212780}
   - 65: {fileID: 458212783}
   m_Layer: 0
-  m_Name: btn_Sound
+  m_Name: btn_Credits
   m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -293,14 +293,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 458212779}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e64f63ad285c0a447aa792330f006442, type: 3}
+  m_Script: {fileID: 11500000, guid: 620334f7f3605d34f91a1a359128e7a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
   explosion: {fileID: 100004, guid: a6d58f54ce5934781962a4f887e834f3, type: 2}
+  explosion_asteroid: {fileID: 8300000, guid: 3dc7455402dfa462b89a4bbd513955e9, type: 3}
   audioSource: {fileID: 1866781492}
-  soundOnOffClip: {fileID: 8300000, guid: 3dc7455402dfa462b89a4bbd513955e9, type: 3}
-  tick: {fileID: 400000, guid: 01f04bda27fe66640bda6c59bdf17b45, type: 3}
 --- !u!114 &458212781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -643,7 +641,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 942843373}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.42999995, y: 1.38999999, z: 0}
+  m_LocalPosition: {x: -.5, y: .5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1972591035}
@@ -736,7 +734,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 134992, guid: 403849da33cabc244ba19b600d3f214d, type: 2}
       propertyPath: m_Name
-      value: btn_Exit
+      value: btn_Credits3
       objectReference: {fileID: 0}
     - target: {fileID: 11450670, guid: 403849da33cabc244ba19b600d3f214d, type: 2}
       propertyPath: explosion_asteroid
@@ -790,7 +788,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 154860, guid: 683ad1ba56d9f39488f998580f49f30c, type: 2}
       propertyPath: m_Name
-      value: btn_Credentials
+      value: btn_Credits2
       objectReference: {fileID: 0}
     - target: {fileID: 11460094, guid: 683ad1ba56d9f39488f998580f49f30c, type: 2}
       propertyPath: explosion_asteroid
@@ -1250,6 +1248,22 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!1 &1812254702 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 154860, guid: 683ad1ba56d9f39488f998580f49f30c, type: 2}
+  m_PrefabInternal: {fileID: 1122580622}
+--- !u!65 &1812254703
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1812254702}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &1866781492 stripped
 AudioSource:
   m_PrefabParentObject: {fileID: 8259974, guid: 22d96d411a443e049958794e927e3c54,

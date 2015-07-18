@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SoundButtonScript : MonoBehaviour {
+public class SoundButtonScript : MonoBehaviour
+{
     public bool sound;
     public GameObject explosion;
     public AudioSource audioSource;
