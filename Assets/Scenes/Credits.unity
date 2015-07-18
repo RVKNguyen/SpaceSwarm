@@ -102,7 +102,7 @@ GameObject:
   - 114: {fileID: 287193296}
   - 82: {fileID: 287193295}
   m_Layer: 0
-  m_Name: Options
+  m_Name: Credits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -296,6 +296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e64f63ad285c0a447aa792330f006442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: 0
   explosion: {fileID: 100004, guid: a6d58f54ce5934781962a4f887e834f3, type: 2}
   audioSource: {fileID: 1866781492}
   soundOnOffClip: {fileID: 8300000, guid: 3dc7455402dfa462b89a4bbd513955e9, type: 3}
@@ -381,7 +382,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 507764357}
-  m_Text: Audio Design and Impementation
+  m_Text: Sound  Design and Impementation
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
