@@ -7,6 +7,10 @@ public class GameController : MonoBehaviour {
     public Transform asteroid2;
     public Transform asteroid3;
 
+    public Transform enemy1;
+    public Transform enemy2;
+    public Transform enemy3;
+
     public Transform buttonGameOver;
 
     private int score;
@@ -87,8 +91,7 @@ public class GameController : MonoBehaviour {
     // TODO: Spawning Enemys
     // TODO: Spawning Powerups
     // TODO: Difficulty
-
-    
+        
 
     IEnumerator SpawnAsteroids()
     {
@@ -100,7 +103,7 @@ public class GameController : MonoBehaviour {
                 dif += 0.02F;
             }
 
-            int random = Random.Range(1, 4);
+            int random = Random.Range(1, 7);
             int randomX = Random.Range(-5, 5);
             int randomY = Random.Range(-5, 5);
 
@@ -115,6 +118,16 @@ public class GameController : MonoBehaviour {
                  case 3:
                      Instantiate(asteroid3, new Vector3(randomX, randomY, 25), Quaternion.identity);
                      break;
+                 case 4:
+                     Instantiate(enemy1, new Vector3(randomX, randomY, 25), Quaternion.Euler(0, 180, 0));
+                     break;
+                 case 5:
+                     Instantiate(enemy2, new Vector3(randomX, randomY, 25), Quaternion.Euler(0, 180, 0));
+                     break;
+                 case 6:
+                     Instantiate(enemy3, new Vector3(randomX, randomY, 25), Quaternion.Euler(0, 180, 0));
+                     break;
+
                  default:
                      Debug.Log("Random Fail");
                      break;
