@@ -10,45 +10,41 @@ public class CreditButtonScript : MonoBehaviour {
 	
 	void OnTriggerEnter (Collider other)
 	{
-		if (other.gameObject.tag == "Shot")
-		{
+				if (other.gameObject.tag == "Shot") {
 			
-			Debug.Log(explosion);
-			if (explosion != null)
-			{
-				audioSource.clip = explosion_asteroid;
-				audioSource.Play();
-				Debug.Log("Sounds should have been played.");
+						Debug.Log (explosion);
+						if (explosion != null) {
+								audioSource.clip = explosion_asteroid;
+								audioSource.Play ();
+								Debug.Log ("Sounds should have been played.");
 				
-				//explosion.GetComponent<Animation>().Play();
-				Instantiate(explosion, transform.position, transform.rotation);
-			}
+								//explosion.GetComponent<Animation>().Play();
+								Instantiate (explosion, transform.position, transform.rotation);
+						}
 			
-			if (transform.parent != null)
-			{
-				OptionsScript script = transform.parent.gameObject.GetComponent<OptionsScript>();
+						if (transform.parent != null) {
+								OptionsScript script = transform.parent.gameObject.GetComponent<OptionsScript> ();
 				
-				switch (this.name)
-				{
-				case "btnMenuExplode":
-					script.btnMenuPressed();
-					break;
-				case "btnExitExplode":
+								switch (this.name) {
+								case "btnMenuExplode":
+										script.btnMenuPressed ();
+										break;
+								case "btnExitExplode":
 					//Debug.Log("Exit pressed");
-					script.btnExitPressed();
-					break;
-				case "btnStartExplode":
-					script.btnStartPressed();
-					break;
-				default:
-					Debug.Log("Nothing");
-					break;
-				}
-			}
+										script.btnExitPressed ();
+										break;
+								case "btnStartExplode":
+										script.btnStartPressed ();
+										break;
+								default:
+										Debug.Log ("Nothing");
+										break;
+								}
+						}
 			
-			Destroy(other.gameObject);
-			Destroy(gameObject);
+						Destroy (other.gameObject);
+						Destroy (gameObject);
+				}
 		}
-		
 
 }
