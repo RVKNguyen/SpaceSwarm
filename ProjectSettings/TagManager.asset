@@ -9,6 +9,7 @@ TagManager:
   - Button
   - EventSystem
   - Shot
+  - PowerUp
   layers:
   - Default
   - TransparentFX

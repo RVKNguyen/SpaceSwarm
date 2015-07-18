@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: 2768a9a4c8d289840918dcb879705893
+timeCreated: 1437250295
+licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
@@ -9,6 +11,7 @@ ModelImporter:
     3300000: //RootNode
     4300000: Asteroid_03
     4300002: prop_asteroid_03
+    4300004: Asteroid003
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -19,6 +22,10 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DestroyByCollision : MonoBehaviour
+public class OnCollision : MonoBehaviour
 {
 	public GameObject explosion;
 	public GameObject playerExplosion;
@@ -52,7 +52,6 @@ public class DestroyByCollision : MonoBehaviour
             Destroy(other.gameObject);
             gameController.UpdateScore(scoreValue);
         }
-
         
 	}
 
@@ -61,7 +60,6 @@ public class DestroyByCollision : MonoBehaviour
         if(transform.parent != null){
             MainMenuScript script = transform.parent.gameObject.GetComponent<MainMenuScript>();
             
-            //Debug.Log(this.name);
             switch (this.name) 
             {
                 case "btn_Start":
