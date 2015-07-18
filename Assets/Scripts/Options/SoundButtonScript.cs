@@ -2,8 +2,8 @@
 using System.Collections;
 
 public class SoundButtonScript : MonoBehaviour {
+    public static bool soundOn;
     public GameObject explosion;
-    public static bool soundOn = true;
     public AudioSource audioSource;
     public AudioClip soundOnOffClip;
     public Transform tick;
@@ -14,6 +14,7 @@ public class SoundButtonScript : MonoBehaviour {
     void Start()
     {
         soundOn = true;
+        AudioListener.volume = 1;
     }
 
     void OnTriggerEnter(Collider other)
@@ -26,6 +27,7 @@ public class SoundButtonScript : MonoBehaviour {
             Destroy(clone, 0.0F);
             Debug.Log("soundOn is true");
             soundOn = false;
+            AudioListener.volume = 1 - AudioListener.volume;
         }
         else
         {
@@ -33,6 +35,7 @@ public class SoundButtonScript : MonoBehaviour {
             clone = trans.gameObject;
             Debug.Log("soundOn is false");
             soundOn = true;
+            AudioListener.volume = 1;
         }
 
         if (gameObject.name == "btn_Sound")

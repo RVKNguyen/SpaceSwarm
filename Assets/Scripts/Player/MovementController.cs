@@ -11,7 +11,7 @@ public class MovementController : MonoBehaviour {
     public float boundaryMaxY;
 
     public GameObject shot;
-    public Transform shotSpawn_left;
+    public Transform shotSpawn_middle;
     public Transform shotSpawn_right;
     public float fireRate;
 
@@ -95,8 +95,9 @@ public class MovementController : MonoBehaviour {
         if (Time.time > nextFire)
         {
             nextFire = Time.time + fireRate;
-            Instantiate(shot, shotSpawn_left.position, shotSpawn_left.rotation);
-            //Instantiate(shot, shotSpawn_right.position, shotSpawn_right.rotation);
+            Debug.Log(shotSpawn_middle.rotation);
+            var angle =  Quaternion.Euler (new Vector3(0, 0, 0.5F )); 
+            Instantiate(shot, shotSpawn_middle.position, shotSpawn_middle.rotation);
             GetComponent<AudioSource>().Play();
         }
     }

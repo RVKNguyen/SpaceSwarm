@@ -11,7 +11,8 @@ public class Done_DestroyByBoundary : MonoBehaviour
         }
         else
         {
-            Destroy(other.gameObject.transform.parent.gameObject);
+            Destroy(other.gameObject);
+            //Destroy(other.gameObject.transform.parent.gameObject);
         }
         
 	}
