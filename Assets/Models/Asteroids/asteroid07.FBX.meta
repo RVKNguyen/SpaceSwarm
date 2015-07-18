@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: d3088a02c39a07b4dba7385bcd0b737c
-timeCreated: 1433005416
+guid: b8611b49fd8cc81489c227250266b968
+timeCreated: 1437244309
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -9,8 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: GeoSphere001
-    9500000: //RootNode
+    4300000: Asteroid007
   materials:
     importMaterials: 1
     materialName: 0
@@ -20,6 +19,10 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
@@ -64,7 +67,7 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

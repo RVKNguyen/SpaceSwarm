@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 7db3161363bd848439f5049c2b5fb585
-timeCreated: 1437234569
+guid: fa20d3a570ce1174dbd388da44191fd1
+timeCreated: 1437244309
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Menu
+    4300000: Asteroid009
   materials:
     importMaterials: 1
     materialName: 0
