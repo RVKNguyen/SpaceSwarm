@@ -98,9 +98,14 @@ public class MovementController : MonoBehaviour {
             nextFire = Time.time + fireRate;
             //Debug.Log(shotSpawn_middle.rotation);
             var angle =  Quaternion.Euler (new Vector3(0, 0, 0.5F ));
+            var spreadX = 0;
+            var spreadY = 0;
 
-            var spreadX = Random.Range(-10, -3);
-            var spreadY = Random.Range(-3, 3);
+            if (Application.loadedLevel == 1)
+            {
+                spreadX = Random.Range(-10, -3);
+                spreadY = Random.Range(-3, 3);
+            }
 
             Instantiate(shot, shotSpawn_middle.position, shotSpawn_middle.rotation * Quaternion.Euler(spreadX, spreadY, 0));
             GetComponent<AudioSource>().Play();

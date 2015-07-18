@@ -15,7 +15,9 @@ public class EnemyController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         GetComponent<Rigidbody>().velocity = transform.forward * speed * 1.5F;
-        transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform.position);
+        
+        //uncomment for OP enemys
+        //transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform.position);
 
         Shot();
 	}
