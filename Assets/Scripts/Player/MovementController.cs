@@ -99,10 +99,10 @@ public class MovementController : MonoBehaviour {
             //Debug.Log(shotSpawn_middle.rotation);
             var angle =  Quaternion.Euler (new Vector3(0, 0, 0.5F ));
 
-            var test = Camera.main.transform.forward;
-            Debug.Log(test.x);
+            var spreadX = Random.Range(-10, -3);
+            var spreadY = Random.Range(-3, 3);
 
-            Instantiate(shot, shotSpawn_middle.position, shotSpawn_middle.rotation);
+            Instantiate(shot, shotSpawn_middle.position, shotSpawn_middle.rotation * Quaternion.Euler(spreadX, spreadY, 0));
             GetComponent<AudioSource>().Play();
         }
     }
