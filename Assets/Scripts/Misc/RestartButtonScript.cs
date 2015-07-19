@@ -12,8 +12,9 @@ public class GameOverButtonScript : MonoBehaviour {
         audioSource.Play();
         Debug.Log("Sounds should have been played." + gameOverClip + "Audio: " + audioSource);
         Debug.Log("<<<<<<<<<<<<<<<<<< End of Audio");
- 
-        if (other.gameObject.tag == "Shot" && this.name == "Btn_GameOver(Clone)")
+
+
+        if (other.gameObject.tag == "Shot" && this.name == "Btn_Restart(Clone)")
         {
             Application.LoadLevel(1);
         }
