@@ -13,7 +13,7 @@ GameObject:
   - 65: {fileID: 6568970}
   - 114: {fileID: 11479356}
   m_Layer: 0
-  m_Name: Btn_GameOver
+  m_Name: Btn_Restart
   m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
