@@ -14,7 +14,7 @@ ModelImporter:
     4300004: Asteroid003
     9500000: //RootNode
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 1
     materialSearch: 1
   animations:

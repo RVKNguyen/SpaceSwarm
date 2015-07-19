@@ -1,17 +1,24 @@
 fileFormatVersion: 2
-guid: a4d49143dd0391c40abb52841fcd5c4d
-timeCreated: 1437244309
+guid: bac203a42799e5f47a3a9a82e80e0cef
+timeCreated: 1437307078
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
     100000: //RootNode
+    100002: LogoDesign
+    100004: LogoText
     400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Asteroid004
+    400002: LogoDesign
+    400004: LogoText
+    2300000: LogoDesign
+    2300002: LogoText
+    3300000: LogoDesign
+    3300002: LogoText
+    4300000: LogoText
+    4300002: LogoDesign
   materials:
-    importMaterials: 0
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
   animations:
