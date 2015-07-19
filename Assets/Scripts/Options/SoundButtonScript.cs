@@ -16,6 +16,7 @@ public class SoundButtonScript : MonoBehaviour
     {
 		if (MainMenuScript.soundOn)
 		{
+			Destroy(clone, 0.0F);
 			AudioListener.volume = 1;
 		}
 	}
@@ -25,21 +26,22 @@ public class SoundButtonScript : MonoBehaviour
     {
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.clip = soundOnOffClip;
+
 		if (MainMenuScript.soundOn == false)
         {
-			trans = Instantiate(tick, new Vector3(2.3F, 3.12F, 7.98F), Quaternion.identity) as Transform;
-			clone = trans.gameObject;
-			AudioListener.volume = 1 - AudioListener.volume;
-			MainMenuScript.soundOn = false;
-			Debug.Log("soundOn is false");
+			Destroy(clone, 0.0F);
+			Debug.Log("soundOn is true");
+			audioSource.Play();
+			MainMenuScript.soundOn = true;
+			AudioListener.volume = 1;
         }
         else
         {
-			audioSource.Play();
-			Destroy(clone, 0.0F);
-			Debug.Log("soundOn is true");
-			MainMenuScript.soundOn = true;
-			AudioListener.volume = 1;
+			trans = Instantiate(tick, new Vector3(2.3F, 3.12F, 7.98F), Quaternion.identity) as Transform;
+			clone = trans.gameObject;
+			MainMenuScript.soundOn = false;
+			Debug.Log("soundOn is false");
+			AudioListener.volume = 1 - AudioListener.volume;
         }
 
         if (gameObject.name == "btn_Sound")
