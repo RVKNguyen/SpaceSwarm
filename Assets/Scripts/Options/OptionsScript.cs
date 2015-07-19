@@ -1,7 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class OptionsScript : MonoBehaviour {
+public class OptionsScript : MonoBehaviour
+{
+	public void btnCreditsPressed ()
+	{
+		Debug.Log("Credits Button Pressed");
+		Application.LoadLevel(3);
+	}
     public void btnStartPressed()
     {
         Debug.Log("Start Button Pressed");

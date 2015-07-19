@@ -237,18 +237,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11494240, guid: 22d96d411a443e049958794e927e3c54, type: 2}
+      propertyPath: vrModeEnabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 499546, guid: 22d96d411a443e049958794e927e3c54, type: 2}
       propertyPath: m_LocalPosition.z
-      value: .896000028
+      value: .977999985
       objectReference: {fileID: 0}
     - target: {fileID: 499546, guid: 22d96d411a443e049958794e927e3c54, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -.280999988
+      value: -.314999998
       objectReference: {fileID: 0}
-    - target: {fileID: 11406836, guid: 22d96d411a443e049958794e927e3c54, type: 2}
-      propertyPath: shotSpawn_middle
-      value: 
-      objectReference: {fileID: 1401099681}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22d96d411a443e049958794e927e3c54, type: 2}
   m_IsPrefabParent: 0
@@ -1621,6 +1621,8 @@ MonoBehaviour:
   enemy1: {fileID: 471758, guid: d4a58c9b6f393d749bb48ed9bdea95c1, type: 2}
   enemy2: {fileID: 488242, guid: 779310bb5ee4f75498b2b9f797ddb3e5, type: 2}
   enemy3: {fileID: 497510, guid: f6bb94ae352afa64ab0be3973316c574, type: 2}
+  powerUp1: {fileID: 415192, guid: 31c282c8e5c1f1044b2b923d920ba013, type: 2}
+  powerUp2: {fileID: 469184, guid: 17cf442d8bb760e459e62592e49975b5, type: 2}
   buttonGameOver: {fileID: 454158, guid: 86570f4b5322b5a46b64074f0b0fad10, type: 2}
   scoreText: {fileID: 838522642}
   lifeText: {fileID: 89091934}
@@ -2811,10 +2813,6 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!4 &1401099681 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 499546, guid: 22d96d411a443e049958794e927e3c54, type: 2}
-  m_PrefabInternal: {fileID: 694257067}
 --- !u!1 &1710272648
 GameObject:
   m_ObjectHideFlags: 0

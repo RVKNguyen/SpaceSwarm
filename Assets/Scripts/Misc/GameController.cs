@@ -11,9 +11,12 @@ public class GameController : MonoBehaviour {
     public Transform enemy2;
     public Transform enemy3;
 
+    public Transform powerUp1;
+    public Transform powerUp2;
+
     public Transform buttonGameOver;
 
-    private int score;
+    public static int score;
     private int life;
     private bool running;
     private float dif;
@@ -30,14 +33,14 @@ public class GameController : MonoBehaviour {
         UpdateText();
         StartCoroutine(SpawnAsteroids());
 
-        if (SoundButtonScript.soundOn)
+        if (MainMenuScript.soundOn == true)
         {
-            Debug.Log("sound is on" + SoundButtonScript.soundOn);
+            Debug.Log("sound is on" + MainMenuScript.soundOn);
             AudioListener.volume = 1;
         }
         else
         {
-            Debug.Log("sound is off" + SoundButtonScript.soundOn);
+            Debug.Log("sound is off" + MainMenuScript.soundOn);
             AudioListener.volume = 1 - AudioListener.volume;
         }
 	}
@@ -96,6 +99,7 @@ public class GameController : MonoBehaviour {
         Instantiate(buttonGameOver, new Vector3(0 , 0,
             5F), new Quaternion(0, 270, 0, 0));
         Debug.Log("GameOver");
+		Application.LoadLevel (4);
     }
 
     // controlling gameevents (spawning asteroids)
@@ -114,7 +118,7 @@ public class GameController : MonoBehaviour {
                 dif += 0.02F;
             }
 
-            int random = Random.Range(1, 7);
+            int random = Random.Range(1, 9);
             int randomX = Random.Range(-5, 5);
             int randomY = Random.Range(-5, 5);
 
@@ -137,6 +141,12 @@ public class GameController : MonoBehaviour {
                      break;
                  case 6:
                      Instantiate(enemy3, new Vector3(randomX, randomY, 25), Quaternion.Euler(0, 180, 0));
+                     break;
+                 case 7:
+                     Instantiate(powerUp1, new Vector3(randomX, randomY, 25), Quaternion.Euler(0, 180, 0));
+                     break;
+                 case 8:
+                     Instantiate(powerUp2, new Vector3(randomX, randomY, 25), Quaternion.Euler(0, 180, 0));
                      break;
 
                  default:

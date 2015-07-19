@@ -2,8 +2,12 @@
 using System.Collections;
 
 public class MainMenuScript : MonoBehaviour {
+	public static bool soundOn;
 
-
+	void Awake ()
+	{
+		soundOn = true;
+	}
 
 
     public void btnStartPressed()
@@ -17,6 +21,11 @@ public class MainMenuScript : MonoBehaviour {
         Debug.Log("Settings Button Pressed");
         Application.LoadLevel(2);
     }
+
+	public void btnHighscorePressed ()
+	{
+		Debug.Log("Highscore Button Pressed");
+		Application.LoadLevel(4);	}
 
     public void btnExitPressed()
     {
