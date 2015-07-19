@@ -16,7 +16,7 @@ public class GameController : MonoBehaviour {
 
     public Transform buttonGameOver;
 
-    private int score;
+    public static int score;
     private int life;
     private bool running;
     private float dif;
@@ -99,6 +99,7 @@ public class GameController : MonoBehaviour {
         Instantiate(buttonGameOver, new Vector3(0 , 0,
             5F), new Quaternion(0, 270, 0, 0));
         Debug.Log("GameOver");
+		Application.LoadLevel (4);
     }
 
     // controlling gameevents (spawning asteroids)

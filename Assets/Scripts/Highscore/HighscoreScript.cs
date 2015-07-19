@@ -2,6 +2,12 @@
 using System.Collections;
 
 public class HighscoreScript : MonoBehaviour {
+	public GUIText scoreText;
+
+	public void Start ()
+	{
+		scoreText.text = "Score: " + GameController.score;
+	}
 	
 	public void btnRestartPressed()
 	{
