@@ -29,9 +29,9 @@ public class SoundButtonScript : MonoBehaviour
         {
 			trans = Instantiate(tick, new Vector3(2.3F, 3.12F, 7.98F), Quaternion.identity) as Transform;
 			clone = trans.gameObject;
-			Debug.Log("soundOn is false");
-			MainMenuScript.soundOn = false;
 			AudioListener.volume = 1 - AudioListener.volume;
+			MainMenuScript.soundOn = false;
+			Debug.Log("soundOn is false");
         }
         else
         {
