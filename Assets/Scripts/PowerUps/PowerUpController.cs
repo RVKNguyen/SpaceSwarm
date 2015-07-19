@@ -5,8 +5,6 @@ public class PowerUpController : MonoBehaviour {
 
     public float speed;
     public string type;
-    public AudioClip clip;
-    public AudioSource audioSource;
 
     private GameController gameController;
 
@@ -41,6 +39,7 @@ public class PowerUpController : MonoBehaviour {
 
         if (other.tag == "Player")
         {
+            GetComponent<AudioSource>().Play();
             switch (type)
             {
                 case "addLife":
@@ -55,11 +54,7 @@ public class PowerUpController : MonoBehaviour {
                     Debug.Log("PowerUp Fail!");
                     break;
             }
-            Debug.Log("Power Up");
-
-            audioSource = gameObject.AddComponent<AudioSource>();
-            audioSource.clip = clip;
-            audioSource.Play();
+            Debug.Log("Power Up collected");
             Destroy(gameObject);
         }
         

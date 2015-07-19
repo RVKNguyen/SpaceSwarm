@@ -122,7 +122,7 @@ public class GameController : MonoBehaviour {
                 dif += 0.02F;
             }
 
-            int random = Random.Range(1, 9);
+            int random = Random.Range(1, 15);
             int randomX = Random.Range(-5, 5);
             int randomY = Random.Range(-5, 5);
 
@@ -138,18 +138,36 @@ public class GameController : MonoBehaviour {
                      Instantiate(asteroid3, new Vector3(randomX, randomY, 50), Quaternion.identity);
                      break;
                  case 4:
-                     Instantiate(enemy1, new Vector3(randomX, randomY, 50), Quaternion.Euler(0, 180, 0));
+                     Instantiate(asteroid1, new Vector3(randomX, randomY, 50), Quaternion.identity);
                      break;
                  case 5:
-                     Instantiate(enemy2, new Vector3(randomX, randomY, 50), Quaternion.Euler(0, 180, 0));
+                     Instantiate(asteroid2, new Vector3(randomX, randomY, 50), Quaternion.identity);
                      break;
                  case 6:
-                     Instantiate(enemy3, new Vector3(randomX, randomY, 50), Quaternion.Euler(0, 180, 0));
+                     Instantiate(asteroid3, new Vector3(randomX, randomY, 50), Quaternion.identity);
                      break;
                  case 7:
-                     Instantiate(powerUp1, new Vector3(randomX, randomY, 50), Quaternion.Euler(0, 180, 0));
+                     Instantiate(asteroid1, new Vector3(randomX, randomY, 50), Quaternion.identity);
                      break;
                  case 8:
+                     Instantiate(asteroid2, new Vector3(randomX, randomY, 50), Quaternion.identity);
+                     break;
+                 case 9:
+                     Instantiate(asteroid3, new Vector3(randomX, randomY, 50), Quaternion.identity);
+                     break;
+                 case 10:
+                     Instantiate(enemy1, new Vector3(randomX, randomY, 50), Quaternion.Euler(0, 180, 0));
+                     break;
+                 case 11:
+                     Instantiate(enemy2, new Vector3(randomX, randomY, 50), Quaternion.Euler(0, 180, 0));
+                     break;
+                 case 12:
+                     Instantiate(enemy3, new Vector3(randomX, randomY, 50), Quaternion.Euler(0, 180, 0));
+                     break;
+                 case 13:
+                     Instantiate(powerUp1, new Vector3(randomX, randomY, 50), Quaternion.Euler(0, 180, 0));
+                     break;
+                 case 14:
                      Instantiate(powerUp2, new Vector3(randomX, randomY, 50), Quaternion.Euler(0, 180, 0));
                      break;
 
