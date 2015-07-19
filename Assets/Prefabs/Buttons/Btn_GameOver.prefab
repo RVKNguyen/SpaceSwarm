@@ -82,11 +82,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 115130}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4db1aade9de0a9441bc6875f5106562a, type: 3}
+  m_Script: {fileID: 11500000, guid: 620334f7f3605d34f91a1a359128e7a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosion: {fileID: 100004, guid: a6d58f54ce5934781962a4f887e834f3, type: 2}
+  explosion_asteroid: {fileID: 8300000, guid: 3dc7455402dfa462b89a4bbd513955e9, type: 3}
   audioSource: {fileID: 0}
-  gameOverClip: {fileID: 8300000, guid: 1be4472894949437694aead55c6da60f, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -97,11 +98,15 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: explosion_asteroid
       value: 
-      objectReference: {fileID: 8300000, guid: 1be4472894949437694aead55c6da60f, type: 3}
+      objectReference: {fileID: 8300000, guid: 3dc7455402dfa462b89a4bbd513955e9, type: 3}
     - target: {fileID: 0}
       propertyPath: gameOverClip
       value: 
       objectReference: {fileID: 8300000, guid: 1be4472894949437694aead55c6da60f, type: 3}
+    - target: {fileID: 0}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 100004, guid: a6d58f54ce5934781962a4f887e834f3, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 115130}

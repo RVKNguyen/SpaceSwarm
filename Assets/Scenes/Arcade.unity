@@ -1625,6 +1625,7 @@ MonoBehaviour:
   powerUp1: {fileID: 415192, guid: 31c282c8e5c1f1044b2b923d920ba013, type: 2}
   powerUp2: {fileID: 469184, guid: 17cf442d8bb760e459e62592e49975b5, type: 2}
   buttonGameOver: {fileID: 454158, guid: 86570f4b5322b5a46b64074f0b0fad10, type: 2}
+  buttonHighScore: {fileID: 454158, guid: 84bd1e0aaf84241818efc587d0cdefe6, type: 2}
   scoreText: {fileID: 838522642}
   lifeText: {fileID: 89091934}
 --- !u!82 &1016290504
