@@ -5091,6 +5091,10 @@ Prefab:
       propertyPath: m_TagString
       value: Button
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 26852f4557a8b4246a44952a7f1334ed, type: 3}
+      propertyPath: m_LocalScale.z
+      value: .5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 26852f4557a8b4246a44952a7f1334ed, type: 3}
   m_IsPrefabParent: 0
@@ -12375,6 +12379,10 @@ Prefab:
     - target: {fileID: 100400, guid: d85c738cfca52e245b4c461bba1537b9, type: 3}
       propertyPath: m_TagString
       value: Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 400400, guid: d85c738cfca52e245b4c461bba1537b9, type: 3}
+      propertyPath: m_LocalScale.z
+      value: .5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d85c738cfca52e245b4c461bba1537b9, type: 3}
