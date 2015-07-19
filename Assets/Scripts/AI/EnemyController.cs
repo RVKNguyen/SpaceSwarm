@@ -4,12 +4,14 @@ using System.Collections;
 public class EnemyController : MonoBehaviour {
 
     public float speed;
+    public float life;
     public float fireRate;
     public GameObject shot;
 
 	// Use this for initialization
 	void Start () {
-        fireRate = 2;
+        fireRate = 1;
+        transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform.position);
 	}
 	
 	// Update is called once per frame
@@ -49,6 +51,19 @@ public class EnemyController : MonoBehaviour {
                     var spreadY = Random.Range(-3, 3);
 
                     //Instantiate(shot, shotSpawn_middle.position, shotSpawn_middle.rotation * Quaternion.Euler(spreadX, spreadY, 0));
-                }*/
+                }
+         */
     }
+
+    public void updateLife(float amount)
+    {
+        life = life - amount;
+    }
+
+    public float getLife()
+    {
+        return life;
+    }
+
+    
 }

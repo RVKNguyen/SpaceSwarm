@@ -104,7 +104,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  fireRate: 0
+  life: 0
+  fireRate: 1
   shot: {fileID: 100000, guid: 11e27c26ac87b40f0a62ec40d7261989, type: 2}
 --- !u!114 &11490040
 MonoBehaviour:
@@ -119,7 +120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 100012, guid: 160925a6fe2664f2a978566b819f0af0, type: 2}
   playerExplosion: {fileID: 100008, guid: 3455fe69f7ddc4604b95bf9b0a1e88d7, type: 2}
-  scoreValue: 200
+  scoreValue: 60
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -137,7 +138,7 @@ Prefab:
       objectReference: {fileID: 100008, guid: 3455fe69f7ddc4604b95bf9b0a1e88d7, type: 2}
     - target: {fileID: 0}
       propertyPath: scoreValue
-      value: 200
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_UseGravity
@@ -153,6 +154,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fireRate
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

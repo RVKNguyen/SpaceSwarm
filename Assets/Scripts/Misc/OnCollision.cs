@@ -48,6 +48,24 @@ public class OnCollision : MonoBehaviour
 		
         if (other.tag == "Shot")
         {
+            if (this.tag == "Enemy")
+            {
+                if (GetComponent<EnemyController>() != null)
+                {
+                    EnemyController x = GetComponent<EnemyController>();
+                    x.updateLife(1);
+                    Debug.Log("Enemy hitted! Life: " + x.getLife());
+
+                    if (x.getLife() > 0)
+                    {
+                        return;
+                    }
+                    else
+                    {
+                        Debug.Log("Enemy Down!");
+                    }
+                }
+            }
             Destroy(gameObject);
             Destroy(other.gameObject);
             gameController.UpdateScore(scoreValue);
