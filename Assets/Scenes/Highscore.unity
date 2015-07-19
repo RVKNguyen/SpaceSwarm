@@ -1487,6 +1487,10 @@ Prefab:
       propertyPath: m_TagString
       value: Button
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 94e27898c4a062b4f8c6943b622ff3ca, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 37dff7ddf96eec74f805c4c021511c89, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 94e27898c4a062b4f8c6943b622ff3ca, type: 3}
   m_IsPrefabParent: 0
