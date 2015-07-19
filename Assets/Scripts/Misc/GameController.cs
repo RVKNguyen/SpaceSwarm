@@ -101,6 +101,19 @@ public class GameController : MonoBehaviour {
 
     public void GameOver()
     {
+        var clones = GameObject.FindGameObjectsWithTag ("Enemy");
+        var clones_2 = GameObject.FindGameObjectsWithTag("PowerUp");
+
+        foreach (var clone in clones)
+        {
+            Destroy(clone);
+        }
+
+        foreach (var clone in clones_2)
+        {
+            Destroy(clone);
+        }
+
         running = false;
 
 		Highscore script = transform.gameObject.GetComponent<Highscore> ();
