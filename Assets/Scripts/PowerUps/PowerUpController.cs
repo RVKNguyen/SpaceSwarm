@@ -5,8 +5,11 @@ public class PowerUpController : MonoBehaviour {
 
     public float speed;
     public string type;
+    public AudioClip clip;
+    public AudioSource audioSource;
 
     private GameController gameController;
+
 
 	// Use this for initialization
 	void Start () {
@@ -52,7 +55,11 @@ public class PowerUpController : MonoBehaviour {
                     Debug.Log("PowerUp Fail!");
                     break;
             }
+            Debug.Log("Power Up");
 
+            audioSource = gameObject.AddComponent<AudioSource>();
+            audioSource.clip = clip;
+            audioSource.Play();
             Destroy(gameObject);
         }
         
