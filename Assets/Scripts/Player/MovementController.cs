@@ -20,7 +20,7 @@ public class MovementController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        selectionTime = 2;
+        selectionTime = 1;
 	}
 	
 	// Update is called once per frame
@@ -86,7 +86,7 @@ public class MovementController : MonoBehaviour {
             }
             else
             {
-                selectionTime = 2;
+                selectionTime = 1;
             }
         }
     }
