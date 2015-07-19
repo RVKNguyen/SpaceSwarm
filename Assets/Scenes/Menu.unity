@@ -5087,6 +5087,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 26852f4557a8b4246a44952a7f1334ed, type: 3}
+      propertyPath: m_TagString
+      value: Button
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 26852f4557a8b4246a44952a7f1334ed, type: 3}
   m_IsPrefabParent: 0
@@ -5624,7 +5628,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 99ac655534ee0464b9d2ccef940e4bcc, type: 2}
+  - {fileID: 2100000, guid: 37b93bca612705145bdb571240c9cda4, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -9981,6 +9985,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &1592028339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1592028335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 620334f7f3605d34f91a1a359128e7a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 100004, guid: 2857e183f4cd3df4e9096e5b578bd32f, type: 2}
+  explosion_asteroid: {fileID: 8300000, guid: 3dc7455402dfa462b89a4bbd513955e9, type: 3}
+  audioSource: {fileID: 1966276935}
 --- !u!1 &1594849785
 GameObject:
   m_ObjectHideFlags: 0

@@ -54,7 +54,12 @@ public class ButtonScript : MonoBehaviour {
                         //Debug.Log("Exit pressed");
                         script.btnExitPressed();
                         break;
-
+					case "btn_Highscore":
+						script.btnHighscorePressed();
+						break;
+					case "btnHighscore":
+						script.btnHighscorePressed();
+						break;
                     default:
                         Debug.Log("Nothing");
                         break;

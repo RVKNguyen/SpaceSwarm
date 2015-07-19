@@ -22,6 +22,11 @@ public class MainMenuScript : MonoBehaviour {
         Application.LoadLevel(2);
     }
 
+	public void btnHighscorePressed ()
+	{
+		Debug.Log("Highscore Button Pressed");
+		Application.LoadLevel(4);	}
+
     public void btnExitPressed()
     {
         Debug.Log("Exit Button Pressed");

@@ -23,14 +23,14 @@ public class CreditButtonScript : MonoBehaviour {
 						}
 			
 						if (transform.parent != null) {
-								OptionsScript script = transform.parent.gameObject.GetComponent<OptionsScript> ();
+				CreditsScript script = transform.parent.gameObject.GetComponent<CreditsScript> ();
 				
 								switch (this.name) {
 								case "btnMenuExplode":
 										script.btnMenuPressed ();
 										break;
 								case "btnExitExplode":
-					//Debug.Log("Exit pressed");
+								//Debug.Log("Exit pressed");
 										script.btnExitPressed ();
 										break;
 								case "btnStartExplode":
