@@ -36,7 +36,7 @@ public class OnCollision : MonoBehaviour
 
 		if (other.tag == "Player")
 		{
-
+			Handheld.Vibrate();
             gameController.UpdateLife(Random.Range(-90, -80));
             if (gameController.GetLife() < 0)
             {
