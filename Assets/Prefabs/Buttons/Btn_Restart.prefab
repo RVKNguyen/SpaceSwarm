@@ -73,7 +73,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 33.3840027, y: 8.11200047, z: 2.39999986}
+  m_Size: {x: 35, y: 10, z: 30}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &9500080
 Animator:
@@ -180,6 +180,18 @@ Prefab:
       propertyPath: restartClip
       value: 
       objectReference: {fileID: 8300000, guid: 3dc7455402dfa462b89a4bbd513955e9, type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_Size.x
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Size.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Size.z
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 115130}
