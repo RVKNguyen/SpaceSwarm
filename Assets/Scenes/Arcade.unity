@@ -1544,6 +1544,7 @@ GameObject:
   - 114: {fileID: 1016290499}
   - 114: {fileID: 1016290503}
   - 82: {fileID: 1016290504}
+  - 114: {fileID: 1016290505}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: EventSystem
@@ -1695,6 +1696,17 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!114 &1016290505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1016290498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9349b048b7334e5bb8020fccbd93452, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1211012105
 GameObject:
   m_ObjectHideFlags: 0
