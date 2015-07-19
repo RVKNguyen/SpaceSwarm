@@ -3,10 +3,12 @@ using System.Collections;
 
 public class HighscoreScript : MonoBehaviour {
 	public GUIText scoreText;
+	public GUIText highScoreText;
 
 	public void Start ()
 	{
-		scoreText.text = "Score: " + GameController.score;
+		scoreText.text = "Last Score: " + GameController.score;
+		//highScoreText = "Highscore: " + PlayerPrefs.GetInt("0HScore");
 	}
 	
 	public void btnRestartPressed()
@@ -25,4 +27,5 @@ public class HighscoreScript : MonoBehaviour {
 		Debug.Log("Exit Button Pressed");
 		Application.Quit();
 	}
+
 }

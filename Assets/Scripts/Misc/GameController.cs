@@ -103,6 +103,10 @@ public class GameController : MonoBehaviour {
         running = false;
         Instantiate(buttonGameOver, new Vector3(0F, 0F, 5F), new Quaternion(0, 270, 0, 0));
         Debug.Log("GameOver");
+		
+		Highscore script = transform.gameObject.GetComponent<Highscore> ();
+		script.AddScore (score, (int)(Time.time * 1000));
+
 		Application.LoadLevel (4);
     }
 
