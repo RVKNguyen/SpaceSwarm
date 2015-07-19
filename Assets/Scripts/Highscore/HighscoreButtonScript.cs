@@ -43,7 +43,7 @@ public class HighscoreButtonScript : MonoBehaviour {
 					//Debug.Log("Exit pressed");
 					script.btnExitPressed ();
 					break;
-				case "btnRestartExplode":
+				case "btnRestart":
 					script.btnRestartPressed ();
 					break;
 				default:
