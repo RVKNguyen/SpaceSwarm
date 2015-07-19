@@ -41,19 +41,17 @@ public class PowerUpController : MonoBehaviour {
             switch (type)
             {
                 case "addLife":
-                    Debug.Log("PowerUp Collected: " + type);
-                    gameController.UpdateLife(100);
+                    //Debug.Log("PowerUp Collected: " + type);
+                    gameController.UpdateLife(30);
                     break;
                 case "addPoints":
-                    Debug.Log("PowerUp Collected: " + type);
-                    gameController.UpdateScore(100);
+                    //Debug.Log("PowerUp Collected: " + type);
+                    gameController.UpdateScore(50);
                     break;
                 default:
                     Debug.Log("PowerUp Fail!");
                     break;
             }
-
-
 
             Destroy(gameObject);
         }

@@ -58,7 +58,8 @@ public class GameController : MonoBehaviour {
         if (life > 0)
         {
             lifeText.text = "Life: " + life;
-            
+            GetComponent<AudioSource>().Pause();
+
             if (life < 20)
             {
                 GetComponent<AudioSource>().Play();
@@ -66,7 +67,7 @@ public class GameController : MonoBehaviour {
         }
         else
         {
-            lifeText.text = "--------";
+            lifeText.text = "GAME OVER";
             GetComponent<AudioSource>().Pause();
         }
     }
@@ -80,6 +81,10 @@ public class GameController : MonoBehaviour {
     public void UpdateLife(int lifePoints)
     {
         life += lifePoints;
+        if (life >= 100)
+        {
+            life = 100;
+        }
         UpdateText();
     }
 
@@ -96,17 +101,13 @@ public class GameController : MonoBehaviour {
     public void GameOver()
     {
         running = false;
-        Instantiate(buttonGameOver, new Vector3(0 , 0,
-            5F), new Quaternion(0, 270, 0, 0));
+        Instantiate(buttonGameOver, new Vector3(0F, 0F, 5F), new Quaternion(0, 270, 0, 0));
         Debug.Log("GameOver");
 		Application.LoadLevel (4);
     }
 
     // controlling gameevents (spawning asteroids)
-    // TODO: Spawning Enemys
-    // TODO: Spawning Powerups
-    // TODO: Difficulty
-        
+    // TODO: Difficulty   
 
     IEnumerator SpawnAsteroids()
     {
@@ -125,28 +126,28 @@ public class GameController : MonoBehaviour {
             switch (random)
             {
                  case 1:
-                     Instantiate(asteroid1, new Vector3(randomX, randomY, 25), Quaternion.identity);
+                     Instantiate(asteroid1, new Vector3(randomX, randomY, 50), Quaternion.identity);
                      break;
                  case 2:
-                     Instantiate(asteroid2, new Vector3(randomX, randomY, 25), Quaternion.identity);
+                     Instantiate(asteroid2, new Vector3(randomX, randomY, 50), Quaternion.identity);
                      break;
                  case 3:
-                     Instantiate(asteroid3, new Vector3(randomX, randomY, 25), Quaternion.identity);
+                     Instantiate(asteroid3, new Vector3(randomX, randomY, 50), Quaternion.identity);
                      break;
                  case 4:
-                     Instantiate(enemy1, new Vector3(randomX, randomY, 25), Quaternion.Euler(0, 180, 0));
+                     Instantiate(enemy1, new Vector3(randomX, randomY, 50), Quaternion.Euler(0, 180, 0));
                      break;
                  case 5:
-                     Instantiate(enemy2, new Vector3(randomX, randomY, 25), Quaternion.Euler(0, 180, 0));
+                     Instantiate(enemy2, new Vector3(randomX, randomY, 50), Quaternion.Euler(0, 180, 0));
                      break;
                  case 6:
-                     Instantiate(enemy3, new Vector3(randomX, randomY, 25), Quaternion.Euler(0, 180, 0));
+                     Instantiate(enemy3, new Vector3(randomX, randomY, 50), Quaternion.Euler(0, 180, 0));
                      break;
                  case 7:
-                     Instantiate(powerUp1, new Vector3(randomX, randomY, 25), Quaternion.Euler(0, 180, 0));
+                     Instantiate(powerUp1, new Vector3(randomX, randomY, 50), Quaternion.Euler(0, 180, 0));
                      break;
                  case 8:
-                     Instantiate(powerUp2, new Vector3(randomX, randomY, 25), Quaternion.Euler(0, 180, 0));
+                     Instantiate(powerUp2, new Vector3(randomX, randomY, 50), Quaternion.Euler(0, 180, 0));
                      break;
 
                  default:
