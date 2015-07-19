@@ -8,7 +8,7 @@ public class HighscoreScript : MonoBehaviour {
 	public void Start ()
 	{
 		scoreText.text = "Last Score: " + GameController.score;
-		//highScoreText = "Highscore: " + PlayerPrefs.GetInt("0HScore");
+		highScoreText.text = "Highscore: " + PlayerPrefs.GetInt("0HScore");
 	}
 	
 	public void btnRestartPressed()

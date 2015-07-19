@@ -26,6 +26,7 @@ public class Highscore : MonoBehaviour {
 					PlayerPrefs.SetInt(i + "HScoreTime",newTime);
 					newScore = oldScore;
 					newTime = oldTime;
+					Debug.Log(PlayerPrefs.GetInt(i + "HScore"));
 				}
 			} else {
 				PlayerPrefs.SetInt(i + "HScore",newScore);
@@ -34,6 +35,5 @@ public class Highscore : MonoBehaviour {
 				newTime = 0;
 			}
 		}
-		Application.LoadLevel (4);
 	}
 }
