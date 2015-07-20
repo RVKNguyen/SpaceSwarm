@@ -33,17 +33,6 @@ public class GameController : MonoBehaviour {
         dif = 0F;
         UpdateText();
         StartCoroutine(SpawnAsteroids());
-
-        if (MainMenuScript.soundOn == true)
-        {
-            Debug.Log("sound is on" + MainMenuScript.soundOn);
-            AudioListener.volume = 1;
-        }
-        else
-        {
-            Debug.Log("sound is off" + MainMenuScript.soundOn);
-            AudioListener.volume = 1 - AudioListener.volume;
-        }
 	}
 	
 	// Update is called once per frame
