@@ -338,7 +338,7 @@ Animator:
   m_GameObject: {fileID: 138902}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 60878b80d71cfd7429bb8b3a326e983a, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c360be00709b4fe4ea232822dff4dc98, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1491,6 +1491,10 @@ Prefab:
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: c360be00709b4fe4ea232822dff4dc98, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 132148}
