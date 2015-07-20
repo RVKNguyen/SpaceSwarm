@@ -37,7 +37,16 @@ public class OnCollision : MonoBehaviour
 		if (other.tag == "Player")
 		{
 			Handheld.Vibrate();
-            gameController.UpdateLife(Random.Range(-90, -80));
+
+            if (this.name == "Bolt_2(Clone)")
+            {
+                gameController.UpdateLife(Random.Range(-5, -15));
+            }
+            else
+            {
+                gameController.UpdateLife(Random.Range(-90, -80));
+            }
+
             if (gameController.GetLife() < 0)
             {
                 Destroy(other.gameObject);
