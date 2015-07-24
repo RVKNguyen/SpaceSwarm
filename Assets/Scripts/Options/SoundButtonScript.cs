@@ -16,7 +16,6 @@ public class SoundButtonScript : MonoBehaviour
     {
 		if (MainMenuScript.soundOn)
 		{
-			Destroy(clone, 0.0F);
 			AudioListener.volume = 1;
 		}
 	}
