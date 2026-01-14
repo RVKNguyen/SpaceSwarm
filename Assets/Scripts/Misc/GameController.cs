@@ -106,6 +106,8 @@ public class GameController : MonoBehaviour {
         running = false;
 
 		Highscore script = transform.gameObject.GetComponent<Highscore> ();
+		// Note: Time.time gives seconds since game/scene start, converted to milliseconds
+		// This represents total play time, not a countdown timer
 		script.AddScore (score, (int)(Time.time * 1000));
 
 		Instantiate(buttonHighScore, new Vector3(0F, 0F, 5F), new Quaternion(0, 270, 0, 0));
